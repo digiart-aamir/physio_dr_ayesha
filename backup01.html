@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Care — Dr. Ayesha Zia | Physiotherapy, Hijama &amp; Cardiac Rehab</title>
+<meta name="description" content="Prime Care with Dr. Ayesha Zia — Physiotherapy, Hijama (cupping) and cardiac rehab in Rawalpindi &amp; Islamabad. Home and clinic visits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal-900:#0A3D37;
+    --teal-700:#0F6E63;
+    --teal-600:#128A78;
+    --teal-500:#16A38A;
+    --teal-100:#E8F6F1;
+    --paper:#FFFFFF;
+    --paper-soft:#F5FAF8;
+    --ink:#122620;
+    --ink-soft:#4C6660;
+    --copper-500:#B8763D;
+    --copper-100:#F6E9DA;
+    --line:#DCEEE9;
+    --shadow-teal: 0 20px 50px -20px rgba(10,61,55,.35);
+    --radius-lg: 28px;
+    --radius-md: 18px;
+    --radius-sm: 10px;
+    --ff-head:'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+    --ff-body:'Inter', 'Segoe UI', system-ui, sans-serif;
+    --ff-ur:'Noto Nastaliq Urdu', 'Segoe UI', serif;
+    --ease: cubic-bezier(.16,.84,.32,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth; scroll-padding-top:90px;}
+  body{
+    margin:0; font-family:var(--ff-body); color:var(--ink); background:var(--paper);
+    -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  html[dir="rtl"] body{font-family:var(--ff-ur);}
+  h1,h2,h3,h4{font-family:var(--ff-head); margin:0; line-height:1.08; letter-spacing:-0.01em; color:var(--teal-900);}
+  html[dir="rtl"] h1, html[dir="rtl"] h2, html[dir="rtl"] h3, html[dir="rtl"] h4{font-family:var(--ff-ur); letter-spacing:0; line-height:1.6;}
+  p{margin:0; line-height:1.65; color:var(--ink-soft);}
+  a{color:inherit; text-decoration:none;}
+  ul{margin:0; padding:0; list-style:none;}
+  img,svg{display:block; max-width:100%;}
+  button{font-family:inherit; cursor:pointer; border:none; background:none;}
+  .container{max-width:1180px; margin:0 auto; padding:0 28px;}
+  section{position:relative;}
+  .eyebrow-none{display:none;} /* placeholder guard */
+  ::selection{background:var(--teal-100); color:var(--teal-900);}
+
+  /* ---------- Reveal on scroll ---------- */
+  .reveal{opacity:0; transform:translateY(36px); transition:opacity .9s var(--ease), transform .9s var(--ease);}
+  .reveal.visible{opacity:1; transform:translateY(0);}
+  .reveal-scale{opacity:0; transform:scale(.88); transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-scale.visible{opacity:1; transform:scale(1);}
+  .reveal-l{opacity:0; transform:translateX(-50px); transition:opacity .9s var(--ease), transform .9s var(--ease);}
+  .reveal-l.visible{opacity:1; transform:translateX(0);}
+  .reveal-r{opacity:0; transform:translateX(50px); transition:opacity .9s var(--ease), transform .9s var(--ease);}
+  .reveal-r.visible{opacity:1; transform:translateX(0);}
+  .stagger > *{transition-delay:calc(var(--i, 0) * 90ms);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+    .reveal, .reveal-scale, .reveal-l, .reveal-r{opacity:1 !important; transform:none !important;}
+  }
+
+  /* ---------- Nav ---------- */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:20px 0; transition:padding .4s var(--ease), background .4s var(--ease), box-shadow .4s var(--ease);
+  }
+  header.scrolled{
+    padding:12px 0; background:rgba(255,255,255,.82); backdrop-filter:blur(14px);
+    box-shadow:0 8px 30px -12px rgba(10,61,55,.18); border-bottom:1px solid var(--line);
+  }
+  .nav-row{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:var(--ff-head); font-weight:700; font-size:19px; color:var(--teal-900);}
+  .brand .pulse-dot{width:11px; height:11px; border-radius:50%; background:var(--teal-500); box-shadow:0 0 0 0 rgba(22,163,138,.6); animation:pulseDot 2.2s infinite;}
+  @keyframes pulseDot{
+    0%{box-shadow:0 0 0 0 rgba(22,163,138,.55);}
+    70%{box-shadow:0 0 0 10px rgba(22,163,138,0);}
+    100%{box-shadow:0 0 0 0 rgba(22,163,138,0);}
+  }
+  .brand small{display:block; font-family:var(--ff-body); font-weight:500; font-size:11.5px; color:var(--ink-soft); margin-top:1px;}
+  nav.links{display:flex; align-items:center; gap:30px;}
+  nav.links a{font-size:14.5px; font-weight:500; color:var(--teal-900); position:relative; padding:4px 0;}
+  nav.links a::after{content:""; position:absolute; left:0; right:0; bottom:-2px; height:2px; background:var(--teal-500); transform:scaleX(0); transform-origin:left; transition:transform .35s var(--ease);}
+  nav.links a:hover::after{transform:scaleX(1);}
+  .nav-actions{display:flex; align-items:center; gap:14px;}
+  .lang-toggle{display:flex; border:1.5px solid var(--teal-700); border-radius:30px; overflow:hidden; font-size:13px; font-weight:700;}
+  .lang-toggle button{padding:7px 14px; color:var(--teal-700); transition:background .3s, color .3s;}
+  .lang-toggle button.active{background:var(--teal-700); color:#fff;}
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:13px 26px; border-radius:100px; font-weight:600; font-size:14.5px;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--teal-700); color:#fff; box-shadow:var(--shadow-teal);}
+  .btn-primary:hover{transform:translateY(-3px); box-shadow:0 26px 50px -18px rgba(10,61,55,.5);}
+  .btn-ghost{border:1.5px solid var(--teal-700); color:var(--teal-700);}
+  .btn-ghost:hover{background:var(--teal-100); transform:translateY(-3px);}
+  .btn-sm{padding:10px 20px; font-size:13.5px;}
+  .burger{display:none; flex-direction:column; gap:5px; width:30px;}
+  .burger span{height:2.5px; background:var(--teal-900); border-radius:2px; transition:.3s;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:170px 0 110px; position:relative; overflow:hidden;
+    background:radial-gradient(ellipse 80% 60% at 80% -10%, var(--teal-100), transparent 60%);
+  }
+  .blob{position:absolute; border-radius:44% 56% 62% 38%/48% 42% 58% 52%; filter:blur(6px); opacity:.55; z-index:0;
+    animation:morph 11s ease-in-out infinite, drift 16s ease-in-out infinite;}
+  .blob-1{width:420px; height:420px; background:linear-gradient(135deg,var(--teal-100),var(--teal-500) 130%); top:-140px; right:-120px; opacity:.4;}
+  .blob-2{width:260px; height:260px; background:linear-gradient(135deg,var(--copper-100),var(--copper-500) 140%); bottom:-80px; left:-90px; opacity:.28; animation-duration:14s, 19s;}
+  @keyframes morph{
+    0%,100%{border-radius:44% 56% 62% 38%/48% 42% 58% 52%;}
+    33%{border-radius:60% 40% 44% 56%/38% 62% 40% 60%;}
+    66%{border-radius:38% 62% 50% 50%/60% 38% 62% 40%;}
+  }
+  @keyframes drift{0%,100%{transform:translate(0,0);}50%{transform:translate(-18px,24px);}}
+  .hero-grid{display:grid; grid-template-columns:1.05fr .95fr; gap:50px; align-items:center; position:relative; z-index:1;}
+  .hero-tag{display:inline-flex; align-items:center; gap:8px; background:var(--teal-100); color:var(--teal-700); font-size:13px; font-weight:600; padding:8px 16px; border-radius:100px; margin-bottom:22px;}
+  .hero h1{font-size:clamp(34px,4.6vw,58px); margin-bottom:22px;}
+  .hero h1 .accent{color:var(--teal-500);}
+  .hero p.lead{font-size:17.5px; max-width:480px; margin-bottom:34px;}
+  .hero-ctas{display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-bottom:38px;}
+  .hero-stats{display:flex; gap:34px; flex-wrap:wrap;}
+  .hero-stats .stat b{display:block; font-family:var(--ff-head); font-size:26px; color:var(--teal-900);}
+  .hero-stats .stat span{font-size:12.5px; color:var(--ink-soft);}
+
+  .hero-visual{position:relative; height:460px; perspective:1400px;}
+  .ecg-card{
+    position:absolute; inset:0; border-radius:var(--radius-lg); background:linear-gradient(160deg,var(--teal-900),var(--teal-700));
+    box-shadow:0 40px 80px -30px rgba(10,61,55,.55); overflow:hidden; transform-style:preserve-3d;
+  }
+  .ecg-card svg{position:absolute; bottom:36%; left:0; width:100%; height:130px;}
+  .ecg-path{fill:none; stroke:rgba(255,255,255,.85); stroke-width:2.4; stroke-linecap:round;
+    stroke-dasharray:900; stroke-dashoffset:900; animation:drawEcg 3.2s linear infinite;}
+  @keyframes drawEcg{ to{ stroke-dashoffset:0; } }
+  .ecg-dot{fill:#fff; offset-path:path('M0,60 L60,60 L80,10 L100,110 L120,60 L200,60 L220,20 L240,90 L260,60 L900,60');
+    animation:moveDot 3.2s linear infinite;}
+  @keyframes moveDot{ from{offset-distance:0%;} to{offset-distance:100%;} }
+  .float-card{
+    position:absolute; background:#fff; border-radius:var(--radius-md); padding:16px 18px;
+    box-shadow:0 24px 46px -20px rgba(10,61,55,.35); display:flex; align-items:center; gap:12px;
+    transform-style:preserve-3d; animation:float 5s ease-in-out infinite;
+  }
+  .float-card .ico{width:38px; height:38px; border-radius:11px; display:flex; align-items:center; justify-content:center; flex:none;}
+  .float-card b{display:block; font-family:var(--ff-head); font-size:16px; color:var(--teal-900);}
+  .float-card span{font-size:11.5px; color:var(--ink-soft);}
+  .fc-1{top:10%; left:-8%; animation-delay:0s;}
+  .fc-1 .ico{background:var(--teal-100); color:var(--teal-700);}
+  .fc-2{bottom:6%; right:-6%; animation-delay:1.4s;}
+  .fc-2 .ico{background:var(--copper-100); color:var(--copper-500);}
+  @keyframes float{0%,100%{transform:translateY(0) rotateX(0) rotateY(0);}50%{transform:translateY(-14px) rotateX(3deg) rotateY(-3deg);}}
+  .scroll-cue{position:absolute; bottom:26px; left:50%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:6px; z-index:2;}
+  .scroll-cue .line{width:1.5px; height:34px; background:linear-gradient(var(--teal-500), transparent); animation:scrollLine 1.8s ease-in-out infinite;}
+  @keyframes scrollLine{0%{opacity:.2; transform:scaleY(.4);}50%{opacity:1; transform:scaleY(1);}100%{opacity:.2; transform:scaleY(.4);}}
+
+  /* ---------- Trust / stats strip ---------- */
+  .trust{padding:36px 0; background:var(--teal-900); overflow:hidden;}
+  .trust-row{display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; color:#fff; text-align:center;}
+  .trust-row .stat{flex:1; min-width:140px;}
+  .trust-row b{display:block; font-family:var(--ff-head); font-size:30px;}
+  .trust-row span{font-size:12.5px; color:rgba(255,255,255,.7);}
+
+  /* ---------- Section heading ---------- */
+  .sec-head{max-width:640px; margin-bottom:56px;}
+  .sec-head.center{margin-inline:auto; text-align:center;}
+  .sec-head h2{font-size:clamp(28px,3.4vw,42px); margin-bottom:14px;}
+  .sec-head p{font-size:16px;}
+  .kicker{display:inline-block; font-size:13px; font-weight:700; color:var(--teal-500); margin-bottom:10px;}
+
+  /* ---------- About ---------- */
+  .about{padding:120px 0;}
+  .about-grid{display:grid; grid-template-columns:.85fr 1.15fr; gap:70px; align-items:center;}
+  .about-art{position:relative;}
+  .about-art svg{width:100%; height:auto;}
+  .about-badge{position:absolute; bottom:-18px; left:-18px; background:#fff; border-radius:var(--radius-md); padding:14px 18px; box-shadow:var(--shadow-teal); display:flex; align-items:center; gap:10px;}
+  .about-badge b{font-family:var(--ff-head); font-size:20px; color:var(--teal-700);}
+  .about-badge span{font-size:11.5px; color:var(--ink-soft); display:block;}
+  .cred-list{margin-top:28px; border-inline-start:2px solid var(--line); padding-inline-start:26px;}
+  .cred-item{position:relative; padding-bottom:26px;}
+  .cred-item:last-child{padding-bottom:0;}
+  .cred-item::before{content:attr(data-n); position:absolute; inset-inline-start:-45px; top:0; width:30px; height:30px; border-radius:50%; background:var(--teal-100); color:var(--teal-700); font-family:var(--ff-head); font-weight:700; font-size:13px; display:flex; align-items:center; justify-content:center;}
+  .cred-item h4{font-size:16.5px; margin-bottom:4px;}
+  .cred-item p{font-size:14.5px;}
+
+  /* ---------- Services ---------- */
+  .services{padding:120px 0; background:var(--paper-soft);}
+  .service-panel{
+    display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;
+    padding:56px 0; border-bottom:1px solid var(--line);
+  }
+  .service-panel:last-child{border-bottom:none;}
+  .service-panel:nth-child(even){direction:rtl;}
+  .service-panel:nth-child(even) .service-copy{direction:ltr;}
+  html[dir="rtl"] .service-panel:nth-child(even){direction:ltr;}
+  .service-visual{perspective:1200px;}
+  .tilt-card{
+    border-radius:var(--radius-lg); padding:46px; min-height:280px; transform-style:preserve-3d;
+    transition:transform .1s linear; box-shadow:var(--shadow-teal); display:flex; align-items:center; justify-content:center;
+  }
+  .tilt-card svg{width:130px; height:130px;}
+  .sv-physio{background:linear-gradient(150deg,var(--teal-600),var(--teal-900));}
+  .sv-hijama{background:linear-gradient(150deg,var(--copper-500),#7A4A22);}
+  .sv-cardio{background:linear-gradient(150deg,var(--teal-500),var(--teal-800,var(--teal-900)));}
+  .service-copy h3{font-size:28px; margin-bottom:14px;}
+  .service-copy p.desc{margin-bottom:20px; font-size:15.5px;}
+  .service-feats{display:grid; gap:10px; margin-bottom:24px;}
+  .service-feats li{display:flex; gap:10px; font-size:14.5px; align-items:flex-start;}
+  .service-feats li svg{flex:none; width:18px; height:18px; margin-top:2px; color:var(--teal-500);}
+  .price-tag{display:inline-flex; align-items:baseline; gap:6px; margin-bottom:22px;}
+  .price-tag .from{font-size:12px; color:var(--ink-soft);}
+  .price-tag .amt{font-family:var(--ff-head); font-size:24px; color:var(--teal-900);}
+
+  /* ---------- Process ---------- */
+  .process{padding:120px 0;}
+  .process-track{position:relative;}
+  .process-line{position:absolute; top:26px; left:0; right:0; height:2px; background:var(--line); overflow:hidden;}
+  .process-line-fill{position:absolute; inset:0; background:var(--teal-500); transform:scaleX(0); transform-origin:left; transition:transform 1.4s var(--ease);}
+  .process-steps{display:grid; grid-template-columns:repeat(5,1fr); gap:24px; position:relative;}
+  .p-step{text-align:center;}
+  .p-step .num{width:54px; height:54px; margin:0 auto 18px; border-radius:50%; background:#fff; border:2px solid var(--teal-500); color:var(--teal-700); font-family:var(--ff-head); font-weight:700; font-size:18px; display:flex; align-items:center; justify-content:center; position:relative; z-index:1; transition:background .4s,color .4s;}
+  .p-step.on .num{background:var(--teal-500); color:#fff;}
+  .p-step h4{font-size:15px; margin-bottom:6px;}
+  .p-step p{font-size:13px;}
+
+  /* ---------- Pricing ---------- */
+  .pricing{padding:120px 0; background:var(--paper-soft);}
+  .price-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .price-card{background:#fff; border-radius:var(--radius-lg); padding:38px 30px; box-shadow:0 20px 46px -26px rgba(10,61,55,.25); border:1px solid var(--line); position:relative; transition:transform .4s var(--ease), box-shadow .4s var(--ease);}
+  .price-card:hover{transform:translateY(-8px); box-shadow:var(--shadow-teal);}
+  .price-card.feat{border-color:var(--teal-500); box-shadow:var(--shadow-teal);}
+  .price-card .tag{position:absolute; top:-13px; insetInlineStart:30px; background:var(--teal-500); color:#fff; font-size:11.5px; font-weight:700; padding:5px 14px; border-radius:100px;}
+  .price-card h3{font-size:19px; margin-bottom:6px;}
+  .price-card .p-from{font-size:12.5px; color:var(--ink-soft); margin-bottom:2px;}
+  .price-card .p-amt{font-family:var(--ff-head); font-size:34px; color:var(--teal-900); margin-bottom:22px;}
+  .price-card ul{display:grid; gap:11px; margin-bottom:28px;}
+  .price-card li{font-size:14px; display:flex; gap:9px; align-items:flex-start;}
+  .price-card li svg{flex:none; width:17px; height:17px; margin-top:2px; color:var(--teal-500);}
+
+  /* ---------- Testimonials ---------- */
+  .testimonials{padding:120px 0; overflow:hidden;}
+  .marquee{display:flex; gap:24px; width:max-content; animation:scrollX 32s linear infinite;}
+  .marquee:hover{animation-play-state:paused;}
+  @keyframes scrollX{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+  .t-card{background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); padding:30px; width:340px; flex:none; box-shadow:0 18px 40px -26px rgba(10,61,55,.2);}
+  .t-card .stars{color:var(--copper-500); font-size:14px; margin-bottom:14px; letter-spacing:2px;}
+  .t-card p{font-size:14.5px; margin-bottom:18px; color:var(--ink);}
+  .t-who{display:flex; align-items:center; gap:12px;}
+  .t-avatar{width:40px; height:40px; border-radius:50%; background:var(--teal-100); color:var(--teal-700); display:flex; align-items:center; justify-content:center; font-family:var(--ff-head); font-weight:700;}
+  .t-who b{font-size:14px; display:block;}
+  .t-who span{font-size:12px; color:var(--ink-soft);}
+
+  /* ---------- FAQ ---------- */
+  .faq{padding:120px 0; background:var(--paper-soft);}
+  .faq-list{max-width:760px; margin:0 auto; display:grid; gap:14px;}
+  .faq-item{background:#fff; border:1px solid var(--line); border-radius:var(--radius-md); overflow:hidden;}
+  .faq-q{display:flex; justify-content:space-between; align-items:center; gap:16px; padding:20px 24px; font-weight:600; font-size:15.5px; color:var(--teal-900);}
+  .faq-q .plus{flex:none; width:22px; height:22px; position:relative;}
+  .faq-q .plus::before,.faq-q .plus::after{content:""; position:absolute; background:var(--teal-700); border-radius:2px; transition:transform .35s var(--ease);}
+  .faq-q .plus::before{width:100%; height:2px; top:50%; left:0; transform:translateY(-50%);}
+  .faq-q .plus::after{height:100%; width:2px; left:50%; top:0; transform:translateX(-50%);}
+  .faq-item.open .plus::after{transform:translateX(-50%) scaleY(0);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .4s var(--ease);}
+  .faq-a p{padding:0 24px 22px; font-size:14.5px;}
+
+  /* ---------- Blog ---------- */
+  .blog{padding:120px 0;}
+  .blog-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  .blog-card{border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--line); transition:transform .4s var(--ease), box-shadow .4s var(--ease);}
+  .blog-card:hover{transform:translateY(-6px); box-shadow:var(--shadow-teal);}
+  .blog-thumb{height:150px; display:flex; align-items:center; justify-content:center;}
+  .blog-thumb svg{width:56px; height:56px; color:#fff;}
+  .blog-body{padding:22px 22px 26px; background:#fff;}
+  .blog-cat{font-size:11.5px; font-weight:700; color:var(--teal-500); margin-bottom:8px; display:block;}
+  .blog-body h4{font-size:16.5px; margin-bottom:8px;}
+  .blog-body p{font-size:13.5px;}
+
+  /* ---------- Contact ---------- */
+  .contact{padding:120px 0; background:linear-gradient(160deg,var(--teal-900),var(--teal-700)); color:#fff; position:relative; overflow:hidden;}
+  .contact .blob{opacity:.15;}
+  .contact-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; position:relative; z-index:1;}
+  .contact h2{color:#fff; font-size:clamp(28px,3.4vw,40px); margin-bottom:16px;}
+  .contact p.lead{color:rgba(255,255,255,.78); margin-bottom:30px; max-width:420px;}
+  .contact-methods{display:grid; gap:16px;}
+  .c-method{display:flex; align-items:center; gap:14px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.16); border-radius:var(--radius-md); padding:16px 18px; transition:background .3s, transform .3s;}
+  .c-method:hover{background:rgba(255,255,255,.16); transform:translateX(4px);}
+  html[dir="rtl"] .c-method:hover{transform:translateX(-4px);}
+  .c-method .ico{width:42px; height:42px; border-radius:12px; background:rgba(255,255,255,.14); display:flex; align-items:center; justify-content:center; flex:none;}
+  .c-method b{display:block; font-size:14.5px;}
+  .c-method span{font-size:12.5px; color:rgba(255,255,255,.68);}
+  .form-card{background:#fff; border-radius:var(--radius-lg); padding:38px; box-shadow:0 40px 80px -30px rgba(0,0,0,.4);}
+  .form-card h3{color:var(--teal-900); font-size:20px; margin-bottom:20px;}
+  .field{margin-bottom:16px;}
+  .field label{display:block; font-size:13px; font-weight:600; color:var(--teal-900); margin-bottom:6px;}
+  .field input, .field select, .field textarea{
+    width:100%; padding:13px 14px; border-radius:11px; border:1.5px solid var(--line); font-family:inherit; font-size:14.5px; color:var(--ink); background:var(--paper-soft);
+    transition:border-color .3s, background .3s;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none; border-color:var(--teal-500); background:#fff;}
+  .field textarea{resize:vertical; min-height:80px;}
+  .form-note{font-size:12px; color:var(--ink-soft); margin-top:10px;}
+
+  /* ---------- Footer ---------- */
+  footer{background:#0A2C27; color:rgba(255,255,255,.7); padding:70px 0 30px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:50px; padding-bottom:40px; border-bottom:1px solid rgba(255,255,255,.1);}
+  .foot-brand{color:#fff; font-family:var(--ff-head); font-weight:700; font-size:19px; margin-bottom:12px;}
+  footer p{color:rgba(255,255,255,.6); font-size:14px; max-width:320px;}
+  footer h5{color:#fff; font-size:14px; margin-bottom:16px;}
+  footer ul{display:grid; gap:10px;}
+  footer a{font-size:14px; color:rgba(255,255,255,.65); transition:color .3s;}
+  footer a:hover{color:#fff;}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:22px; font-size:12.5px; flex-wrap:wrap; gap:10px;}
+
+  /* ---------- Floating WhatsApp ---------- */
+  .wa-float{
+    position:fixed; bottom:26px; insetInlineEnd:26px; z-index:90; width:58px; height:58px; border-radius:50%;
+    background:#1DA851; display:flex; align-items:center; justify-content:center; box-shadow:0 16px 34px -12px rgba(29,168,81,.6);
+    animation:waPulse 2.6s infinite;
+  }
+  html[dir="rtl"] .wa-float{ right:auto; left:26px; }
+  @keyframes waPulse{0%,100%{transform:scale(1);}50%{transform:scale(1.07);}}
+  .wa-float svg{width:28px; height:28px; fill:#fff;}
+
+  /* ---------- Mobile menu ---------- */
+  .mobile-menu{position:fixed; inset:0; background:var(--teal-900); z-index:99; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:26px; transform:translateY(-100%); transition:transform .5s var(--ease);}
+  .mobile-menu.open{transform:translateY(0);}
+  .mobile-menu a{color:#fff; font-family:var(--ff-head); font-size:24px;}
+  .mobile-menu .close-x{position:absolute; top:26px; insetInlineEnd:28px; width:30px; height:30px; display:flex; align-items:center; justify-content:center;}
+  .mobile-menu .close-x span{position:absolute; width:26px; height:2.5px; background:#fff;}
+  .mobile-menu .close-x span:first-child{transform:rotate(45deg);}
+  .mobile-menu .close-x span:last-child{transform:rotate(-45deg);}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:980px){
+    nav.links, .hero-stats br{display:none;}
+    .burger{display:flex;}
+    .hero-grid, .about-grid, .contact-grid{grid-template-columns:1fr; gap:44px;}
+    .hero{padding:150px 0 90px; text-align:center;}
+    .hero p.lead{margin-inline:auto;}
+    .hero-ctas{justify-content:center;}
+    .hero-stats{justify-content:center;}
+    .hero-visual{height:380px; max-width:440px; margin:0 auto;}
+    .service-panel{grid-template-columns:1fr; direction:ltr !important;}
+    .price-grid, .blog-grid{grid-template-columns:1fr 1fr;}
+    .process-steps{grid-template-columns:repeat(5,1fr);}
+    .foot-grid{grid-template-columns:1fr 1fr; gap:34px;}
+  }
+  @media (max-width:680px){
+    .container{padding:0 20px;}
+    .trust-row{justify-content:center; gap:30px;}
+    .price-grid, .blog-grid{grid-template-columns:1fr;}
+    .process-steps{grid-template-columns:1fr; gap:34px; text-align:left;}
+    .process-steps.stagger{text-align:left;}
+    .process-line{display:none;}
+    .p-step{display:flex; gap:16px; align-items:flex-start; text-align:left;}
+    .p-step .num{margin:0;}
+    .foot-grid{grid-template-columns:1fr; gap:30px;}
+    .foot-bottom{flex-direction:column; align-items:flex-start;}
+    .form-card{padding:26px;}
+    .about-badge{position:static; margin-top:18px; display:inline-flex;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="container nav-row">
+    <div class="brand"><span class="pulse-dot"></span><div>Prime Care<small data-i18n="brand.sub">Dr. Ayesha Zia — Physiotherapy &amp; Hijama</small></div></div>
+    <nav class="links">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="ur">UR</button>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm" style="display:none" id="navBookDesktop" data-i18n="nav.book">Book Appointment</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-x" id="closeMenu"><span></span><span></span></div>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#process" data-i18n="nav.process">Process</a>
+  <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-tag" data-i18n="hero.tag">Rawalpindi &amp; Islamabad · Home &amp; Clinic Visits</span>
+      <h1 data-i18n="hero.title">Get back to moving.<br>Get back to <span class="accent">feeling like yourself.</span></h1>
+      <p class="lead" data-i18n="hero.lead">Dr. Ayesha Zia treats pain, injury and heart-recovery patients with physiotherapy, cardiac rehab and certified hijama — at Prime Care clinic or at your doorstep.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Book Appointment</a>
+        <a href="tel:+923000000000" class="btn btn-ghost" data-i18n="hero.cta2">Call Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b class="counter" data-target="1200">0</b><span data-i18n="hero.stat1">Patients treated</span></div>
+        <div class="stat"><b class="counter" data-target="9">0</b><span data-i18n="hero.stat2">Years of experience</span></div>
+        <div class="stat"><b class="counter" data-target="600">0</b><span data-i18n="hero.stat3">Home visits done</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-scale" id="heroVisual">
+      <div class="ecg-card">
+        <svg viewBox="0 0 900 120" preserveAspectRatio="none">
+          <path class="ecg-path" d="M0,60 L60,60 L80,10 L100,110 L120,60 L200,60 L220,20 L240,90 L260,60 L900,60"></path>
+          <circle class="ecg-dot" r="5"></circle>
+        </svg>
+      </div>
+      <div class="float-card fc-1">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.5 4.5 3 1-1.5 2.5-3 4.5-3C19 5 21.5 8.5 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div>
+        <div><b data-i18n="hero.card1t">Certified Hijama</b><span data-i18n="hero.card1s">Sunnah cupping therapy</span></div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <div><b data-i18n="hero.card2t">Cardiac Rehab</b><span data-i18n="hero.card2s">Guided recovery plans</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="line"></div></div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust">
+  <div class="container trust-row reveal">
+    <div class="stat"><b class="counter" data-target="9">0</b><span data-i18n="trust.s1">Years in practice</span></div>
+    <div class="stat"><b class="counter" data-target="1200">0</b><span data-i18n="trust.s2">Patients treated</span></div>
+    <div class="stat"><b class="counter" data-target="600">0</b><span data-i18n="trust.s3">Home visits</span></div>
+    <div class="stat"><b class="counter" data-target="98">0</b>%<span data-i18n="trust.s4">Patient satisfaction</span></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-art reveal-l">
+      <svg viewBox="0 0 320 380" fill="none">
+        <rect x="10" y="10" width="300" height="360" rx="28" fill="#E8F6F1"/>
+        <circle cx="160" cy="140" r="62" fill="#0F6E63"/>
+        <path d="M100 300c8-58 44-86 60-86s52 28 60 86" stroke="#0F6E63" stroke-width="10" fill="none" stroke-linecap="round"/>
+        <circle cx="140" cy="132" r="6" fill="#fff"/>
+        <circle cx="180" cy="132" r="6" fill="#fff"/>
+        <path d="M140 156c8 8 32 8 40 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+      </svg>
+      <div class="about-badge">
+        <b class="counter" data-target="9">0</b>
+        <span data-i18n="about.badge">years treating<br>pain &amp; recovery</span>
+      </div>
+    </div>
+    <div class="reveal-r">
+      <span class="kicker" data-i18n="about.kicker">About Dr. Ayesha Zia</span>
+      <h2 data-i18n="about.title">A clinician who treats the person, not just the diagnosis.</h2>
+      <p style="margin-top:16px; font-size:16px;" data-i18n="about.body">Dr. Ayesha Zia is a physiotherapist and certified hijama practitioner based in Rawalpindi, serving patients across Rawalpindi and Islamabad. She combines evidence-based physiotherapy, cardiac rehabilitation and traditional cupping therapy into treatment plans built around each patient's daily life — at Prime Care clinic or in the comfort of their own home.</p>
+      <div class="cred-list">
+        <div class="cred-item" data-n="1">
+          <h4 data-i18n="about.c1t">Doctor of Physical Therapy (DPT)</h4>
+          <p data-i18n="about.c1d">Placeholder — replace with her university &amp; graduation year.</p>
+        </div>
+        <div class="cred-item" data-n="2">
+          <h4 data-i18n="about.c2t">Certified Hijama (Cupping) Practitioner</h4>
+          <p data-i18n="about.c2d">Placeholder — replace with certifying body &amp; year.</p>
+        </div>
+        <div class="cred-item" data-n="3">
+          <h4 data-i18n="about.c3t">Cardiac Rehabilitation Training</h4>
+          <p data-i18n="about.c3d">Placeholder — replace with training institute.</p>
+        </div>
+        <div class="cred-item" data-n="4">
+          <h4 data-i18n="about.c4t">9+ years in clinical practice</h4>
+          <p data-i18n="about.c4d">Placeholder — replace with real years / prior workplaces.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="services.kicker">What we treat</span>
+      <h2 data-i18n="services.title">Three disciplines, one recovery plan</h2>
+      <p style="margin:0 auto" data-i18n="services.sub">Physiotherapy, hijama and cardiac rehab — chosen and combined based on your condition, not a fixed package.</p>
+    </div>
+
+    <!-- Physiotherapy -->
+    <div class="service-panel">
+      <div class="service-visual reveal-l">
+        <div class="tilt-card sv-physio" data-tilt>
+          <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><path d="M50 20a8 8 0 100-16 8 8 0 000 16z" fill="#fff" stroke="none"/><path d="M50 30v25l-18 30M50 55l18 30M32 45l-14 8M68 45l14 8" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="service-copy reveal-r">
+        <h3 data-i18n="s1.title">Physiotherapy</h3>
+        <p class="desc" data-i18n="s1.desc">Manual therapy and guided exercise for back pain, joint pain, sports injuries and post-surgery recovery — with a plan you can follow at home between sessions.</p>
+        <ul class="service-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f1">Back, neck &amp; joint pain relief</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f2">Post-surgery &amp; post-injury rehab</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f3">Sports injury recovery</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f4">Personalised home exercise plan</span></li>
+        </ul>
+        <div class="price-tag"><span class="from" data-i18n="s1.from">Starting from</span><span class="amt">PKR 2,500</span></div>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="s1.cta">Book Physiotherapy</a>
+      </div>
+    </div>
+
+    <!-- Hijama -->
+    <div class="service-panel">
+      <div class="service-visual reveal-r">
+        <div class="tilt-card sv-hijama" data-tilt>
+          <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><path d="M30 45h40l-4 30a6 6 0 01-6 5H40a6 6 0 01-6-5l-4-30z"/><path d="M30 45c0-11 9-20 20-20s20 9 20 20"/><path d="M50 25v-8"/></svg>
+        </div>
+      </div>
+      <div class="service-copy reveal-l">
+        <h3 data-i18n="s2.title">Hijama (Cupping Therapy)</h3>
+        <p class="desc" data-i18n="s2.desc">Traditional wet and dry cupping performed with sterile, single-use equipment — used for circulation, detox and chronic pain relief, following Sunnah practice.</p>
+        <ul class="service-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f1">Wet &amp; dry cupping</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f2">Sterile, single-use cups &amp; needles</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f3">Chronic pain &amp; migraine relief</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f4">Female practitioner, private setting</span></li>
+        </ul>
+        <div class="price-tag"><span class="from" data-i18n="s2.from">Starting from</span><span class="amt">PKR 3,000</span></div>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="s2.cta">Book Hijama</a>
+      </div>
+    </div>
+
+    <!-- Cardio -->
+    <div class="service-panel">
+      <div class="service-visual reveal-l">
+        <div class="tilt-card sv-cardio" data-tilt>
+          <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><path d="M15 55h15l8-20 12 35 10-25 6 10h19" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="service-copy reveal-r">
+        <h3 data-i18n="s3.title">Cardiac Rehab &amp; Cardio Physiotherapy</h3>
+        <p class="desc" data-i18n="s3.desc">Structured, monitored exercise and breathing therapy for patients recovering from a cardiac event or living with reduced stamina — paced to what your heart is ready for.</p>
+        <ul class="service-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f1">Post-cardiac event recovery</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f2">Breathing &amp; graded exercise therapy</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f3">Stamina &amp; mobility rebuilding</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f4">Monthly progress review</span></li>
+        </ul>
+        <div class="price-tag"><span class="from" data-i18n="s3.from">Starting from</span><span class="amt">PKR 8,000<span style="font-size:13px;color:var(--ink-soft)">/mo</span></span></div>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="s3.cta">Book Cardiac Rehab</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="process.kicker">How it works</span>
+      <h2 data-i18n="process.title">From first message to full recovery</h2>
+      <p style="margin:0 auto" data-i18n="process.sub">The same clear path whether you visit the clinic or Dr. Ayesha visits you at home.</p>
+    </div>
+    <div class="process-track">
+      <div class="process-line"><div class="process-line-fill" id="processFill"></div></div>
+      <div class="process-steps stagger" id="processSteps">
+        <div class="p-step" style="--i:0"><div class="num">1</div><h4 data-i18n="p1.t">Book</h4><p data-i18n="p1.d">WhatsApp, call or the form below.</p></div>
+        <div class="p-step" style="--i:1"><div class="num">2</div><h4 data-i18n="p2.t">Assess</h4><p data-i18n="p2.d">History, pain points &amp; goals reviewed.</p></div>
+        <div class="p-step" style="--i:2"><div class="num">3</div><h4 data-i18n="p3.t">Plan</h4><p data-i18n="p3.d">A treatment plan built for your case.</p></div>
+        <div class="p-step" style="--i:3"><div class="num">4</div><h4 data-i18n="p4.t">Treat</h4><p data-i18n="p4.d">Sessions at clinic or your home.</p></div>
+        <div class="p-step" style="--i:4"><div class="num">5</div><h4 data-i18n="p5.t">Review</h4><p data-i18n="p5.d">Progress checked &amp; plan adjusted.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="pricing.kicker">Packages</span>
+      <h2 data-i18n="pricing.title">Simple pricing, starting points</h2>
+      <p style="margin:0 auto" data-i18n="pricing.sub">Exact cost depends on condition &amp; location. These are starting-from ranges — confirmed after assessment.</p>
+    </div>
+    <div class="price-grid reveal stagger">
+      <div class="price-card" style="--i:0">
+        <h3 data-i18n="pc1.t">Physiotherapy Session</h3>
+        <div class="p-from" data-i18n="pc1.from">Starting from</div>
+        <div class="p-amt">PKR 2,500</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc1.l1">60-minute session</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc1.l2">Clinic or home visit</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc1.l3">Home exercise plan included</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-sm" style="width:100%" data-i18n="pc.cta">Book This</a>
+      </div>
+      <div class="price-card feat" style="--i:1">
+        <span class="tag" data-i18n="pc2.tag">Most booked</span>
+        <h3 data-i18n="pc2.t">Hijama Session</h3>
+        <div class="p-from" data-i18n="pc2.from">Starting from</div>
+        <div class="p-amt">PKR 3,000</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc2.l1">Wet or dry cupping</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc2.l2">Sterile single-use tools</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc2.l3">Aftercare guidance</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-sm" style="width:100%" data-i18n="pc.cta">Book This</a>
+      </div>
+      <div class="price-card" style="--i:2">
+        <h3 data-i18n="pc3.t">Cardiac Rehab Program</h3>
+        <div class="p-from" data-i18n="pc3.from">Starting from</div>
+        <div class="p-amt">PKR 8,000<span style="font-size:14px;color:var(--ink-soft)">/mo</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc3.l1">Weekly monitored sessions</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc3.l2">Breathing &amp; stamina plan</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc3.l3">Monthly progress report</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-sm" style="width:100%" data-i18n="pc.cta">Book This</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:26px; font-size:13px;" data-i18n="pricing.note">Prices shown are placeholders — update with Prime Care's confirmed rates.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="test.kicker">Patients</span>
+      <h2 data-i18n="test.title">What patients say after treatment</h2>
+    </div>
+  </div>
+  <div class="marquee" id="marqueeTrack"></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="faq.kicker">Good to know</span>
+      <h2 data-i18n="faq.title">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList">
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq1.q">Do you visit patients at home?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq1.a">Yes — Dr. Ayesha offers both clinic visits at Prime Care and home visits across Rawalpindi and Islamabad.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq2.q">Is hijama (cupping) safe?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq2.a">Yes, when performed by a trained practitioner with sterile, single-use equipment — exactly how every hijama session at Prime Care is done.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq3.q">How long does a session take?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq3.a">Most physiotherapy and hijama sessions run 45–60 minutes; cardiac rehab sessions are scheduled weekly and reviewed monthly.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq4.q">Which areas do you cover?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq4.a">Rawalpindi and Islamabad, including home visits — message us your area to confirm availability.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq5.q">What should I bring to the first visit?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq5.a">Any previous reports, scans or prescriptions related to your condition, and comfortable clothing you can move in.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / HEALTH TIPS ============ -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="blog.kicker">Health tips</span>
+      <h2 data-i18n="blog.title">From Dr. Ayesha's notes</h2>
+    </div>
+    <div class="blog-grid reveal stagger">
+      <div class="blog-card" style="--i:0">
+        <div class="blog-thumb" style="background:var(--teal-700)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h13v18H6a2 2 0 01-2-2zM4 19a2 2 0 002 2h13"/></svg></div>
+        <div class="blog-body">
+          <span class="blog-cat" data-i18n="blog1.cat">Physiotherapy</span>
+          <h4 data-i18n="blog1.t">Five stretches for desk-job back pain</h4>
+          <p data-i18n="blog1.d">Simple movements you can do at your desk to ease lower-back tension. Full article coming soon.</p>
+        </div>
+      </div>
+      <div class="blog-card" style="--i:1">
+        <div class="blog-thumb" style="background:var(--copper-500)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h13v18H6a2 2 0 01-2-2zM4 19a2 2 0 002 2h13"/></svg></div>
+        <div class="blog-body">
+          <span class="blog-cat" data-i18n="blog2.cat">Hijama</span>
+          <h4 data-i18n="blog2.t">What to expect at your first hijama session</h4>
+          <p data-i18n="blog2.d">A walkthrough of the process, aftercare and how soon results are usually felt. Full article coming soon.</p>
+        </div>
+      </div>
+      <div class="blog-card" style="--i:2">
+        <div class="blog-thumb" style="background:var(--teal-500)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h13v18H6a2 2 0 01-2-2zM4 19a2 2 0 002 2h13"/></svg></div>
+        <div class="blog-body">
+          <span class="blog-cat" data-i18n="blog3.cat">Cardiac Rehab</span>
+          <h4 data-i18n="blog3.t">Walking after a cardiac event — how much is safe?</h4>
+          <p data-i18n="blog3.d">General pacing guidance for early recovery weeks. Full article coming soon.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="blob blob-1" style="background:linear-gradient(135deg,#fff,var(--teal-500) 140%);"></div>
+  <div class="container contact-grid">
+    <div class="reveal-l">
+      <span class="kicker" style="color:#8FE0CE" data-i18n="contact.kicker">Get in touch</span>
+      <h2 data-i18n="contact.title">Let's plan your recovery</h2>
+      <p class="lead" data-i18n="contact.lead">Message on WhatsApp, call directly, or fill the form and we'll confirm your slot the same day.</p>
+      <div class="contact-methods">
+        <a class="c-method" href="https://wa.me/923000000000" target="_blank" rel="noopener">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7a11.9 11.9 0 005.7 1.5h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.5-8.4zM12 21.3h-.1a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.9 9.9 0 01-1.5-5.3C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 012.9 7c0 5.5-4.5 9.9-9.9 9.9z"/></svg></div>
+          <div><b data-i18n="contact.wa">WhatsApp</b><span>+92 300 0000000</span></div>
+        </a>
+        <a class="c-method" href="tel:+923000000000">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 3a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.2-1.3a2 2 0 012.1-.5c1 .3 2 .5 3 .7a2 2 0 011.7 2z"/></svg></div>
+          <div><b data-i18n="contact.call">Call</b><span>+92 300 0000000</span></div>
+        </a>
+        <div class="c-method">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b data-i18n="contact.area">Service area</b><span data-i18n="contact.areaVal">Rawalpindi &amp; Islamabad</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card reveal-r">
+      <h3 data-i18n="form.title">Request an appointment</h3>
+      <form id="bookingForm">
+        <div class="field"><label data-i18n="form.name">Full name</label><input type="text" id="f_name" required></div>
+        <div class="field"><label data-i18n="form.phone">Phone / WhatsApp number</label><input type="tel" id="f_phone" required></div>
+        <div class="field"><label data-i18n="form.service">Service needed</label>
+          <select id="f_service">
+            <option data-i18n="s1.title">Physiotherapy</option>
+            <option data-i18n="s2.title">Hijama (Cupping Therapy)</option>
+            <option data-i18n="s3.title">Cardiac Rehab &amp; Cardio Physiotherapy</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="form.mode">Preferred visit type</label>
+          <select id="f_mode">
+            <option data-i18n="form.modeClinic">Clinic visit</option>
+            <option data-i18n="form.modeHome">Home visit</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="form.msg">Anything we should know? (optional)</label><textarea id="f_msg"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="form.submit">Send via WhatsApp</button>
+        <p class="form-note" data-i18n="form.note">This opens WhatsApp with your details pre-filled — nothing is sent until you press send there.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Prime Care</div>
+        <p data-i18n="foot.about">Physiotherapy, hijama and cardiac rehab with Dr. Ayesha Zia — serving Rawalpindi &amp; Islamabad at the clinic or at home.</p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.linksT">Quick links</h5>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="foot.contactT">Contact</h5>
+        <ul>
+          <li>+92 300 0000000</li>
+          <li>primecare.physio@example.com</li>
+          <li data-i18n="contact.areaVal">Rawalpindi &amp; Islamabad</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© 2026 Prime Care — Dr. Ayesha Zia. All rights reserved.</span>
+      <span data-i18n="foot.placeholder">Contact details on this page are placeholders — update before publishing.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/923000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7a11.9 11.9 0 005.7 1.5h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.5-8.4zM12 21.3h-.1a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.9 9.9 0 01-1.5-5.3C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 012.9 7c0 5.5-4.5 9.9-9.9 9.9z"/></svg>
+</a>
+
+<script>
+/* ---------------- i18n ---------------- */
+const DICT = {
+  "brand.sub":{en:"Dr. Ayesha Zia — Physiotherapy &amp; Hijama",ur:"ڈاکٹر عائشہ ضیاء — فزیوتھراپی اور حجامہ"},
+  "nav.about":{en:"About",ur:"تعارف"},
+  "nav.services":{en:"Services",ur:"خدمات"},
+  "nav.process":{en:"Process",ur:"طریقہ کار"},
+  "nav.pricing":{en:"Pricing",ur:"قیمت"},
+  "nav.faq":{en:"FAQ",ur:"سوالات"},
+  "nav.contact":{en:"Contact",ur:"رابطہ"},
+  "nav.book":{en:"Book Appointment",ur:"اپائنٹمنٹ بک کریں"},
+  "hero.tag":{en:"Rawalpindi &amp; Islamabad · Home &amp; Clinic Visits",ur:"راولپنڈی اور اسلام آباد · گھر اور کلینک وزٹ"},
+  "hero.title":{en:"Get back to moving.<br>Get back to <span class=\"accent\">feeling like yourself.</span>",ur:"دوبارہ حرکت میں آئیں۔<br>دوبارہ <span class=\"accent\">خود کو بہتر محسوس کریں۔</span>"},
+  "hero.lead":{en:"Dr. Ayesha Zia treats pain, injury and heart-recovery patients with physiotherapy, cardiac rehab and certified hijama — at Prime Care clinic or at your doorstep.",ur:"ڈاکٹر عائشہ ضیاء درد، انجری اور دل کے مریضوں کا علاج فزیوتھراپی، کارڈیک بحالی اور سرٹیفائیڈ حجامہ سے کرتی ہیں — پرائم کیئر کلینک یا آپ کے گھر پر۔"},
+  "hero.cta1":{en:"Book Appointment",ur:"اپائنٹمنٹ بک کریں"},
+  "hero.cta2":{en:"Call Now",ur:"ابھی کال کریں"},
+  "hero.stat1":{en:"Patients treated",ur:"علاج شدہ مریض"},
+  "hero.stat2":{en:"Years of experience",ur:"سالوں کا تجربہ"},
+  "hero.stat3":{en:"Home visits done",ur:"مکمل گھریلو وزٹس"},
+  "hero.card1t":{en:"Certified Hijama",ur:"سرٹیفائیڈ حجامہ"},
+  "hero.card1s":{en:"Sunnah cupping therapy",ur:"سنت کپنگ تھراپی"},
+  "hero.card2t":{en:"Cardiac Rehab",ur:"کارڈیک بحالی"},
+  "hero.card2s":{en:"Guided recovery plans",ur:"رہنمائی شدہ بحالی کا منصوبہ"},
+  "trust.s1":{en:"Years in practice",ur:"سالوں کا تجربہ"},
+  "trust.s2":{en:"Patients treated",ur:"علاج شدہ مریض"},
+  "trust.s3":{en:"Home visits",ur:"گھریلو وزٹس"},
+  "trust.s4":{en:"Patient satisfaction",ur:"مریضوں کی اطمینان"},
+  "about.kicker":{en:"About Dr. Ayesha Zia",ur:"ڈاکٹر عائشہ ضیاء کے بارے میں"},
+  "about.title":{en:"A clinician who treats the person, not just the diagnosis.",ur:"ایک معالج جو صرف بیماری نہیں بلکہ مریض کا علاج کرتی ہیں۔"},
+  "about.body":{en:"Dr. Ayesha Zia is a physiotherapist and certified hijama practitioner based in Rawalpindi, serving patients across Rawalpindi and Islamabad. She combines evidence-based physiotherapy, cardiac rehabilitation and traditional cupping therapy into treatment plans built around each patient's daily life — at Prime Care clinic or in the comfort of their own home.",ur:"ڈاکٹر عائشہ ضیاء راولپنڈی میں مقیم فزیوتھراپسٹ اور سرٹیفائیڈ حجامہ پریکٹیشنر ہیں، جو راولپنڈی اور اسلام آباد کے مریضوں کو خدمات فراہم کرتی ہیں۔ وہ فزیوتھراپی، کارڈیک بحالی اور روایتی کپنگ تھراپی کو ملا کر ہر مریض کی روزمرہ زندگی کے مطابق علاج تیار کرتی ہیں۔"},
+  "about.badge":{en:"years treating<br>pain &amp; recovery",ur:"سالوں کا درد اور<br>بحالی کا تجربہ"},
+  "about.c1t":{en:"Doctor of Physical Therapy (DPT)",ur:"ڈاکٹر آف فزیکل تھراپی (DPT)"},
+  "about.c1d":{en:"Placeholder — replace with her university &amp; graduation year.",ur:"عارضی معلومات — یونیورسٹی اور سال درج کریں۔"},
+  "about.c2t":{en:"Certified Hijama (Cupping) Practitioner",ur:"سرٹیفائیڈ حجامہ (کپنگ) پریکٹیشنر"},
+  "about.c2d":{en:"Placeholder — replace with certifying body &amp; year.",ur:"عارضی معلومات — سرٹیفیکیشن ادارہ اور سال درج کریں۔"},
+  "about.c3t":{en:"Cardiac Rehabilitation Training",ur:"کارڈیک بحالی کی تربیت"},
+  "about.c3d":{en:"Placeholder — replace with training institute.",ur:"عارضی معلومات — تربیتی ادارہ درج کریں۔"},
+  "about.c4t":{en:"9+ years in clinical practice",ur:"9+ سالوں کا کلینیکل تجربہ"},
+  "about.c4d":{en:"Placeholder — replace with real years / prior workplaces.",ur:"عارضی معلومات — اصل سال اور تجربہ درج کریں۔"},
+  "services.kicker":{en:"What we treat",ur:"ہم کیا علاج کرتے ہیں"},
+  "services.title":{en:"Three disciplines, one recovery plan",ur:"تین شعبے، ایک بحالی کا منصوبہ"},
+  "services.sub":{en:"Physiotherapy, hijama and cardiac rehab — chosen and combined based on your condition, not a fixed package.",ur:"فزیوتھراپی، حجامہ اور کارڈیک بحالی — آپ کی حالت کے مطابق منتخب کی جاتی ہیں۔"},
+  "s1.title":{en:"Physiotherapy",ur:"فزیوتھراپی"},
+  "s1.desc":{en:"Manual therapy and guided exercise for back pain, joint pain, sports injuries and post-surgery recovery — with a plan you can follow at home between sessions.",ur:"کمر، جوڑوں کے درد، کھیل کی انجری اور سرجری کے بعد بحالی کے لیے مینوئل تھراپی اور مشقیں۔"},
+  "s1.f1":{en:"Back, neck &amp; joint pain relief",ur:"کمر، گردن اور جوڑوں کے درد میں کمی"},
+  "s1.f2":{en:"Post-surgery &amp; post-injury rehab",ur:"سرجری اور انجری کے بعد بحالی"},
+  "s1.f3":{en:"Sports injury recovery",ur:"کھیل کی انجری کی بحالی"},
+  "s1.f4":{en:"Personalised home exercise plan",ur:"ذاتی گھریلو ورزش کا منصوبہ"},
+  "s1.from":{en:"Starting from",ur:"شروع قیمت"},
+  "s1.cta":{en:"Book Physiotherapy",ur:"فزیوتھراپی بک کریں"},
+  "s2.title":{en:"Hijama (Cupping Therapy)",ur:"حجامہ (کپنگ تھراپی)"},
+  "s2.desc":{en:"Traditional wet and dry cupping performed with sterile, single-use equipment — used for circulation, detox and chronic pain relief, following Sunnah practice.",ur:"روایتی ویٹ اور ڈرائی کپنگ، جراثیم سے پاک اور یک بار استعمال ہونے والے آلات کے ساتھ، سنت کے مطابق۔"},
+  "s2.f1":{en:"Wet &amp; dry cupping",ur:"ویٹ اور ڈرائی کپنگ"},
+  "s2.f2":{en:"Sterile, single-use cups &amp; needles",ur:"جراثیم سے پاک، یک بار استعمال آلات"},
+  "s2.f3":{en:"Chronic pain &amp; migraine relief",ur:"دائمی درد اور مائیگرین میں کمی"},
+  "s2.f4":{en:"Female practitioner, private setting",ur:"خاتون پریکٹیشنر، نجی ماحول"},
+  "s2.from":{en:"Starting from",ur:"شروع قیمت"},
+  "s2.cta":{en:"Book Hijama",ur:"حجامہ بک کریں"},
+  "s3.title":{en:"Cardiac Rehab &amp; Cardio Physiotherapy",ur:"کارڈیک بحالی اور کارڈیو فزیوتھراپی"},
+  "s3.desc":{en:"Structured, monitored exercise and breathing therapy for patients recovering from a cardiac event or living with reduced stamina — paced to what your heart is ready for.",ur:"دل کے مریضوں کے لیے منظم ورزش اور سانس کی تھراپی، دل کی صلاحیت کے مطابق۔"},
+  "s3.f1":{en:"Post-cardiac event recovery",ur:"دل کے دورے کے بعد بحالی"},
+  "s3.f2":{en:"Breathing &amp; graded exercise therapy",ur:"سانس اور تدریجی ورزش تھراپی"},
+  "s3.f3":{en:"Stamina &amp; mobility rebuilding",ur:"قوت اور حرکت کی بحالی"},
+  "s3.f4":{en:"Monthly progress review",ur:"ماہانہ پیش رفت کا جائزہ"},
+  "s3.from":{en:"Starting from",ur:"شروع قیمت"},
+  "s3.cta":{en:"Book Cardiac Rehab",ur:"کارڈیک بحالی بک کریں"},
+  "process.kicker":{en:"How it works",ur:"طریقہ کار"},
+  "process.title":{en:"From first message to full recovery",ur:"پہلے پیغام سے مکمل بحالی تک"},
+  "process.sub":{en:"The same clear path whether you visit the clinic or Dr. Ayesha visits you at home.",ur:"چاہے آپ کلینک آئیں یا ڈاکٹر عائشہ آپ کے گھر آئیں، طریقہ کار وہی ہے۔"},
+  "p1.t":{en:"Book",ur:"بک کریں"}, "p1.d":{en:"WhatsApp, call or the form below.",ur:"واٹس ایپ، کال یا نیچے فارم سے۔"},
+  "p2.t":{en:"Assess",ur:"جانچ"}, "p2.d":{en:"History, pain points &amp; goals reviewed.",ur:"تاریخ، درد اور مقاصد کا جائزہ۔"},
+  "p3.t":{en:"Plan",ur:"منصوبہ"}, "p3.d":{en:"A treatment plan built for your case.",ur:"آپ کے کیس کے لیے علاج کا منصوبہ۔"},
+  "p4.t":{en:"Treat",ur:"علاج"}, "p4.d":{en:"Sessions at clinic or your home.",ur:"کلینک یا گھر پر سیشنز۔"},
+  "p5.t":{en:"Review",ur:"جائزہ"}, "p5.d":{en:"Progress checked &amp; plan adjusted.",ur:"پیش رفت کی جانچ اور منصوبے میں تبدیلی۔"},
+  "pricing.kicker":{en:"Packages",ur:"پیکجز"},
+  "pricing.title":{en:"Simple pricing, starting points",ur:"سادہ قیمتیں، ابتدائی حد"},
+  "pricing.sub":{en:"Exact cost depends on condition &amp; location. These are starting-from ranges — confirmed after assessment.",ur:"حتمی قیمت حالت اور مقام پر منحصر ہے۔ یہ ابتدائی قیمتیں ہیں۔"},
+  "pc1.t":{en:"Physiotherapy Session",ur:"فزیوتھراپی سیشن"}, "pc1.from":{en:"Starting from",ur:"شروع قیمت"},
+  "pc1.l1":{en:"60-minute session",ur:"60 منٹ کا سیشن"}, "pc1.l2":{en:"Clinic or home visit",ur:"کلینک یا گھریلو وزٹ"}, "pc1.l3":{en:"Home exercise plan included",ur:"گھریلو ورزش کا منصوبہ شامل"},
+  "pc2.tag":{en:"Most booked",ur:"سب سے زیادہ بک شدہ"}, "pc2.t":{en:"Hijama Session",ur:"حجامہ سیشن"}, "pc2.from":{en:"Starting from",ur:"شروع قیمت"},
+  "pc2.l1":{en:"Wet or dry cupping",ur:"ویٹ یا ڈرائی کپنگ"}, "pc2.l2":{en:"Sterile single-use tools",ur:"جراثیم سے پاک آلات"}, "pc2.l3":{en:"Aftercare guidance",ur:"بعد از علاج رہنمائی"},
+  "pc3.t":{en:"Cardiac Rehab Program",ur:"کارڈیک بحالی پروگرام"}, "pc3.from":{en:"Starting from",ur:"شروع قیمت"},
+  "pc3.l1":{en:"Weekly monitored sessions",ur:"ہفتہ وار نگرانی شدہ سیشنز"}, "pc3.l2":{en:"Breathing &amp; stamina plan",ur:"سانس اور قوت کا منصوبہ"}, "pc3.l3":{en:"Monthly progress report",ur:"ماہانہ رپورٹ"},
+  "pc.cta":{en:"Book This",ur:"بک کریں"},
+  "pricing.note":{en:"Prices shown are placeholders — update with Prime Care's confirmed rates.",ur:"یہ قیمتیں عارضی ہیں — پرائم کیئر کی حتمی قیمتوں سے تبدیل کریں۔"},
+  "test.kicker":{en:"Patients",ur:"مریض"},
+  "test.title":{en:"What patients say after treatment",ur:"علاج کے بعد مریضوں کی رائے"},
+  "faq.kicker":{en:"Good to know",ur:"ضروری معلومات"},
+  "faq.title":{en:"Frequently asked questions",ur:"اکثر پوچھے گئے سوالات"},
+  "faq1.q":{en:"Do you visit patients at home?",ur:"کیا آپ گھر پر وزٹ کرتے ہیں؟"},
+  "faq1.a":{en:"Yes — Dr. Ayesha offers both clinic visits at Prime Care and home visits across Rawalpindi and Islamabad.",ur:"جی ہاں — ڈاکٹر عائشہ کلینک اور راولپنڈی و اسلام آباد میں گھریلو وزٹ دونوں فراہم کرتی ہیں۔"},
+  "faq2.q":{en:"Is hijama (cupping) safe?",ur:"کیا حجامہ محفوظ ہے؟"},
+  "faq2.a":{en:"Yes, when performed by a trained practitioner with sterile, single-use equipment — exactly how every hijama session at Prime Care is done.",ur:"جی ہاں، جب تربیت یافتہ ماہر جراثیم سے پاک آلات سے کرے — جیسا کہ پرائم کیئر میں کیا جاتا ہے۔"},
+  "faq3.q":{en:"How long does a session take?",ur:"سیشن کتنا وقت لیتا ہے؟"},
+  "faq3.a":{en:"Most physiotherapy and hijama sessions run 45–60 minutes; cardiac rehab sessions are scheduled weekly and reviewed monthly.",ur:"زیادہ تر سیشن 45-60 منٹ کے ہوتے ہیں؛ کارڈیک بحالی ہفتہ وار ہوتی ہے۔"},
+  "faq4.q":{en:"Which areas do you cover?",ur:"آپ کون سے علاقوں میں خدمات دیتے ہیں؟"},
+  "faq4.a":{en:"Rawalpindi and Islamabad, including home visits — message us your area to confirm availability.",ur:"راولپنڈی اور اسلام آباد، گھریلو وزٹ سمیت — اپنا علاقہ بتائیں تاکہ تصدیق ہو سکے۔"},
+  "faq5.q":{en:"What should I bring to the first visit?",ur:"پہلی وزٹ پر کیا لانا چاہیے؟"},
+  "faq5.a":{en:"Any previous reports, scans or prescriptions related to your condition, and comfortable clothing you can move in.",ur:"پرانی رپورٹس، سکینز یا نسخے اور آرام دہ لباس ساتھ لائیں۔"},
+  "blog.kicker":{en:"Health tips",ur:"صحت کے مشورے"},
+  "blog.title":{en:"From Dr. Ayesha's notes",ur:"ڈاکٹر عائشہ کے نوٹس سے"},
+  "blog1.cat":{en:"Physiotherapy",ur:"فزیوتھراپی"}, "blog1.t":{en:"Five stretches for desk-job back pain",ur:"دفتری کمر درد کے لیے پانچ اسٹریچز"}, "blog1.d":{en:"Simple movements you can do at your desk to ease lower-back tension. Full article coming soon.",ur:"سادہ حرکات جو کمر کے تناؤ میں مدد دیتی ہیں۔ مکمل مضمون جلد آ رہا ہے۔"},
+  "blog2.cat":{en:"Hijama",ur:"حجامہ"}, "blog2.t":{en:"What to expect at your first hijama session",ur:"پہلے حجامہ سیشن میں کیا توقع رکھیں"}, "blog2.d":{en:"A walkthrough of the process, aftercare and how soon results are usually felt. Full article coming soon.",ur:"عمل، بعد از علاج دیکھ بھال اور نتائج کا جائزہ۔ مکمل مضمون جلد آ رہا ہے۔"},
+  "blog3.cat":{en:"Cardiac Rehab",ur:"کارڈیک بحالی"}, "blog3.t":{en:"Walking after a cardiac event — how much is safe?",ur:"دل کے دورے کے بعد چلنا — کتنا محفوظ ہے؟"}, "blog3.d":{en:"General pacing guidance for early recovery weeks. Full article coming soon.",ur:"ابتدائی بحالی کے ہفتوں کے لیے رہنمائی۔ مکمل مضمون جلد آ رہا ہے۔"},
+  "contact.kicker":{en:"Get in touch",ur:"رابطہ کریں"},
+  "contact.title":{en:"Let's plan your recovery",ur:"آئیں آپ کی بحالی کا منصوبہ بنائیں"},
+  "contact.lead":{en:"Message on WhatsApp, call directly, or fill the form and we'll confirm your slot the same day.",ur:"واٹس ایپ پیغام کریں، کال کریں، یا فارم بھریں — ہم اسی دن تصدیق کریں گے۔"},
+  "contact.wa":{en:"WhatsApp",ur:"واٹس ایپ"},
+  "contact.call":{en:"Call",ur:"کال کریں"},
+  "contact.area":{en:"Service area",ur:"خدمات کا علاقہ"},
+  "contact.areaVal":{en:"Rawalpindi &amp; Islamabad",ur:"راولپنڈی اور اسلام آباد"},
+  "form.title":{en:"Request an appointment",ur:"اپائنٹمنٹ کی درخواست کریں"},
+  "form.name":{en:"Full name",ur:"پورا نام"},
+  "form.phone":{en:"Phone / WhatsApp number",ur:"فون / واٹس ایپ نمبر"},
+  "form.service":{en:"Service needed",ur:"مطلوبہ سروس"},
+  "form.mode":{en:"Preferred visit type",ur:"وزٹ کی قسم"},
+  "form.modeClinic":{en:"Clinic visit",ur:"کلینک وزٹ"},
+  "form.modeHome":{en:"Home visit",ur:"گھریلو وزٹ"},
+  "form.msg":{en:"Anything we should know? (optional)",ur:"مزید کوئی معلومات؟ (اختیاری)"},
+  "form.submit":{en:"Send via WhatsApp",ur:"واٹس ایپ سے بھیجیں"},
+  "form.note":{en:"This opens WhatsApp with your details pre-filled — nothing is sent until you press send there.",ur:"یہ واٹس ایپ کھولے گا، تفصیلات پہلے سے موجود ہوں گی — جب تک آپ خود نہ بھیجیں کچھ نہیں جائے گا۔"},
+  "foot.about":{en:"Physiotherapy, hijama and cardiac rehab with Dr. Ayesha Zia — serving Rawalpindi &amp; Islamabad at the clinic or at home.",ur:"ڈاکٹر عائشہ ضیاء کے ساتھ فزیوتھراپی، حجامہ اور کارڈیک بحالی — راولپنڈی اور اسلام آباد میں۔"},
+  "foot.linksT":{en:"Quick links",ur:"فوری روابط"},
+  "foot.contactT":{en:"Contact",ur:"رابطہ"},
+  "foot.copy":{en:"© 2026 Prime Care — Dr. Ayesha Zia. All rights reserved.",ur:"© 2026 پرائم کیئر — ڈاکٹر عائشہ ضیاء۔ جمیع حقوق محفوظ ہیں۔"},
+  "foot.placeholder":{en:"Contact details on this page are placeholders — update before publishing.",ur:"اس صفحے پر رابطہ کی تفصیلات عارضی ہیں — پبلش کرنے سے پہلے تبدیل کریں۔"}
+};
+
+function setLanguage(lang){
+  document.documentElement.lang = lang === 'ur' ? 'ur' : 'en';
+  document.documentElement.dir = lang === 'ur' ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    const entry = DICT[key];
+    if(entry) el.innerHTML = entry[lang] || entry.en;
+  });
+  document.querySelectorAll('.lang-toggle button').forEach(b=>{
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  localStorage.setItem('pc_lang', lang);
+}
+document.querySelectorAll('.lang-toggle button').forEach(btn=>{
+  btn.addEventListener('click', ()=> setLanguage(btn.dataset.lang));
+});
+
+/* ---------------- Header scroll state ---------------- */
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', ()=>{
+  header.classList.toggle('scrolled', window.scrollY > 40);
+}, {passive:true});
+
+/* ---------------- Mobile menu ---------------- */
+const burgerBtn = document.getElementById('burgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const closeMenu = document.getElementById('closeMenu');
+burgerBtn.addEventListener('click', ()=> mobileMenu.classList.add('open'));
+closeMenu.addEventListener('click', ()=> mobileMenu.classList.remove('open'));
+mobileMenu.querySelectorAll('a').forEach(a=> a.addEventListener('click', ()=> mobileMenu.classList.remove('open')));
+
+/* ---------------- Scroll reveal ---------------- */
+const revealEls = document.querySelectorAll('.reveal, .reveal-scale, .reveal-l, .reveal-r');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.15});
+revealEls.forEach(el=> io.observe(el));
+
+/* ---------------- Counters ---------------- */
+function animateCounter(el){
+  const target = +el.dataset.target;
+  const dur = 1400;
+  const start = performance.now();
+  function tick(now){
+    const p = Math.min((now-start)/dur, 1);
+    el.textContent = Math.floor(p * target);
+    if(p < 1) requestAnimationFrame(tick);
+    else el.textContent = target;
+  }
+  requestAnimationFrame(tick);
+}
+const counterIo = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      animateCounter(entry.target);
+      counterIo.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.5});
+document.querySelectorAll('.counter').forEach(el=> counterIo.observe(el));
+
+/* ---------------- Process step highlight ---------------- */
+const processSteps = document.querySelectorAll('.p-step');
+const processFill = document.getElementById('processFill');
+const processIo = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      processFill.style.transform = 'scaleX(1)';
+      processSteps.forEach((s,i)=> setTimeout(()=> s.classList.add('on'), i*180));
+    }
+  });
+}, {threshold:0.4});
+processIo.observe(document.getElementById('processSteps'));
+
+/* ---------------- 3D tilt (skip on touch devices) ---------------- */
+const isTouch = window.matchMedia('(pointer: coarse)').matches;
+if(!isTouch){
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    card.addEventListener('mousemove', (e)=>{
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left)/r.width - 0.5;
+      const y = (e.clientY - r.top)/r.height - 0.5;
+      card.style.transform = `rotateY(${x*16}deg) rotateX(${-y*16}deg)`;
+    });
+    card.addEventListener('mouseleave', ()=>{ card.style.transform = 'rotateY(0) rotateX(0)'; });
+  });
+  const heroVisual = document.getElementById('heroVisual');
+  window.addEventListener('mousemove', (e)=>{
+    const x = (e.clientX/window.innerWidth - 0.5) * 10;
+    const y = (e.clientY/window.innerHeight - 0.5) * 10;
+    heroVisual.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
+  }, {passive:true});
+}
+
+/* ---------------- FAQ accordion ---------------- */
+document.querySelectorAll('.faq-item').forEach(item=>{
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', ()=>{
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(o=>{
+      o.classList.remove('open'); o.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if(!isOpen){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; }
+  });
+});
+
+/* ---------------- Testimonials marquee ---------------- */
+const testimonialData = [
+  {name:"S. R.", role:"Back pain patient", initials:"SR", text:"Home visits made all the difference — I could barely stand for a week and now I walk without pain."},
+  {name:"M. A.", role:"Hijama client", initials:"MA", text:"Very clean, very professional. Dr. Ayesha explained every step before starting."},
+  {name:"F. K.", role:"Cardiac rehab patient", initials:"FK", text:"The breathing exercises after my procedure genuinely helped my stamina come back gradually."},
+  {name:"N. H.", role:"Sports injury patient", initials:"NH", text:"Recovered from a knee injury faster than my surgeon expected, thanks to the home exercise plan."},
+  {name:"A. Q.", role:"Migraine / hijama client", initials:"AQ", text:"My migraines have reduced noticeably since starting regular cupping sessions."}
+];
+const track = document.getElementById('marqueeTrack');
+function starIcons(){ return "★★★★★"; }
+function buildCard(t){
+  const div = document.createElement('div');
+  div.className = 't-card';
+  div.innerHTML = `<div class="stars">${starIcons()}</div><p>"${t.text}"</p><div class="t-who"><div class="t-avatar">${t.initials}</div><div><b>${t.name}</b><span>${t.role}</span></div></div>`;
+  return div;
+}
+[...testimonialData, ...testimonialData].forEach(t=> track.appendChild(buildCard(t)));
+
+/* ---------------- Booking form -> WhatsApp ---------------- */
+document.getElementById('bookingForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('f_name').value;
+  const phone = document.getElementById('f_phone').value;
+  const service = document.getElementById('f_service').value;
+  const mode = document.getElementById('f_mode').value;
+  const msg = document.getElementById('f_msg').value;
+  const text = `Hi Prime Care, I'd like to book an appointment.\nName: ${name}\nPhone: ${phone}\nService: ${service}\nVisit type: ${mode}\nNote: ${msg || '-'}`;
+  window.open(`https://wa.me/923000000000?text=${encodeURIComponent(text)}`, '_blank');
+});
+
+/* ---------------- Restore saved language ---------------- */
+const savedLang = localStorage.getItem('pc_lang');
+if(savedLang === 'ur') setLanguage('ur');
+</script>
+</body>
+</html>

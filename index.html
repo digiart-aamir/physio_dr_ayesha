@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Care — Dr. Ayesha Zia | Physiotherapy, Hijama &amp; Cardiac Rehab</title>
+<meta name="description" content="Prime Care with Dr. Ayesha Zia — Physiotherapy, Hijama (cupping) and cardiac rehab in Rawalpindi &amp; Islamabad. Home and clinic visits.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader">
+  <div class="container nav-row">
+    <div class="brand">
+      <!-- Prime Care Logo -->
+      <a href="#" class="brand-logo" aria-label="Prime Care Home">
+        <!-- Logo Mark (animated SVG icon) -->
+        <svg class="logo-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- Outer ring -->
+          <circle cx="22" cy="22" r="20" stroke="url(#logoGrad)" stroke-width="2"/>
+          <!-- Inner body glow -->
+          <circle cx="22" cy="22" r="16" fill="url(#logoBg)" opacity="0.15"/>
+          <!-- Cross / plus shape -->
+          <rect x="19.5" y="12" width="5" height="20" rx="2.5" fill="url(#logoGrad)"/>
+          <rect x="12" y="19.5" width="20" height="5" rx="2.5" fill="url(#logoGrad)"/>
+          <!-- Heartbeat pulse dot -->
+          <circle class="logo-pulse" cx="22" cy="22" r="4" fill="#16A38A"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="4" y1="4" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#16A38A"/>
+              <stop offset="100%" stop-color="#0A3D37"/>
+            </linearGradient>
+            <radialGradient id="logoBg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#16A38A"/>
+              <stop offset="100%" stop-color="#0A3D37" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+        </svg>
+        <!-- Wordmark -->
+        <div class="brand-text">
+          <span class="brand-name">Prime<span class="brand-accent">Care</span></span>
+          <small data-i18n="brand.sub">Dr. Ayesha Zia — Physiotherapy &amp; Hijama</small>
+        </div>
+      </a>
+    </div>
+    <nav class="links">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#process" data-i18n="nav.process">Process</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-toggle">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="ur">UR</button>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm" style="display:none" id="navBookDesktop" data-i18n="nav.book">Book Appointment</a>
+      <button class="burger" id="burgerBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-x" id="closeMenu"><span></span><span></span></div>
+  <a href="#about" data-i18n="nav.about">About</a>
+  <a href="#services" data-i18n="nav.services">Services</a>
+  <a href="#process" data-i18n="nav.process">Process</a>
+  <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-tag" data-i18n="hero.tag">Rawalpindi &amp; Islamabad · Home &amp; Clinic Visits</span>
+      <h1 data-i18n="hero.title">Get back to moving.<br>Get back to <span class="accent">feeling like yourself.</span></h1>
+      <p class="lead" data-i18n="hero.lead">Dr. Ayesha Zia treats pain, injury and heart-recovery patients with physiotherapy, cardiac rehab and certified hijama — at Prime Care clinic or at your doorstep.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Book Appointment</a>
+        <a href="tel:+923000000000" class="btn btn-ghost" data-i18n="hero.cta2">Call Now</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b class="counter" data-target="1200">0</b><span data-i18n="hero.stat1">Patients treated</span></div>
+        <div class="stat"><b class="counter" data-target="9">0</b><span data-i18n="hero.stat2">Years of experience</span></div>
+        <div class="stat"><b class="counter" data-target="600">0</b><span data-i18n="hero.stat3">Home visits done</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal-scale" id="heroVisual">
+      <div class="ecg-card">
+        <svg viewBox="0 0 900 120" preserveAspectRatio="none">
+          <path class="ecg-path" d="M0,60 L60,60 L80,10 L100,110 L120,60 L200,60 L220,20 L240,90 L260,60 L900,60"></path>
+          <circle class="ecg-dot" r="5"></circle>
+        </svg>
+      </div>
+      <div class="float-card fc-1">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.35-9.5-8.5C.5 8.5 3 5 6.5 5c2 0 3.5 1.5 4.5 3 1-1.5 2.5-3 4.5-3C19 5 21.5 8.5 21.5 12.5 19 16.65 12 21 12 21z"/></svg></div>
+        <div><b data-i18n="hero.card1t">Certified Hijama</b><span data-i18n="hero.card1s">Sunnah cupping therapy</span></div>
+      </div>
+      <div class="float-card fc-2">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <div><b data-i18n="hero.card2t">Cardiac Rehab</b><span data-i18n="hero.card2s">Guided recovery plans</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><div class="line"></div></div>
+</section>
+
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust">
+  <div class="container trust-row reveal">
+    <div class="stat"><b class="counter" data-target="9">0</b><span data-i18n="trust.s1">Years in practice</span></div>
+    <div class="stat"><b class="counter" data-target="1200">0</b><span data-i18n="trust.s2">Patients treated</span></div>
+    <div class="stat"><b class="counter" data-target="600">0</b><span data-i18n="trust.s3">Home visits</span></div>
+    <div class="stat"><b class="counter" data-target="98">0</b>%<span data-i18n="trust.s4">Patient satisfaction</span></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-art reveal-l" id="aboutArt">
+      <svg id="doctorAvatar" viewBox="0 0 360 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="headGrad" cx="45%" cy="40%" r="55%">
+            <stop offset="0%" stop-color="#1a8a7a"/>
+            <stop offset="100%" stop-color="#0A3D37"/>
+          </radialGradient>
+          <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+            <stop offset="0%" stop-color="#f0faf6"/>
+            <stop offset="100%" stop-color="#d4eee5"/>
+          </radialGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+          </filter>
+          <clipPath id="cardClip">
+            <rect x="0" y="0" width="360" height="460" rx="28"/>
+          </clipPath>
+        </defs>
+
+        <!-- ── Background ── -->
+        <rect x="0" y="0" width="360" height="460" rx="28" fill="url(#bgGrad)"/>
+        <!-- Dot grid -->
+        <g opacity="0.18">
+          <circle cx="36" cy="36" r="1.2" fill="#16A38A"/><circle cx="72" cy="36" r="1.2" fill="#16A38A"/><circle cx="108" cy="36" r="1.2" fill="#16A38A"/><circle cx="144" cy="36" r="1.2" fill="#16A38A"/><circle cx="180" cy="36" r="1.2" fill="#16A38A"/><circle cx="216" cy="36" r="1.2" fill="#16A38A"/><circle cx="252" cy="36" r="1.2" fill="#16A38A"/><circle cx="288" cy="36" r="1.2" fill="#16A38A"/><circle cx="324" cy="36" r="1.2" fill="#16A38A"/>
+          <circle cx="36" cy="72" r="1.2" fill="#16A38A"/><circle cx="72" cy="72" r="1.2" fill="#16A38A"/><circle cx="108" cy="72" r="1.2" fill="#16A38A"/><circle cx="144" cy="72" r="1.2" fill="#16A38A"/><circle cx="180" cy="72" r="1.2" fill="#16A38A"/><circle cx="216" cy="72" r="1.2" fill="#16A38A"/><circle cx="252" cy="72" r="1.2" fill="#16A38A"/><circle cx="288" cy="72" r="1.2" fill="#16A38A"/><circle cx="324" cy="72" r="1.2" fill="#16A38A"/>
+          <circle cx="36" cy="108" r="1.2" fill="#16A38A"/><circle cx="72" cy="108" r="1.2" fill="#16A38A"/><circle cx="324" cy="108" r="1.2" fill="#16A38A"/>
+          <circle cx="36" cy="420" r="1.2" fill="#16A38A"/><circle cx="72" cy="420" r="1.2" fill="#16A38A"/><circle cx="108" cy="420" r="1.2" fill="#16A38A"/><circle cx="144" cy="420" r="1.2" fill="#16A38A"/><circle cx="180" cy="420" r="1.2" fill="#16A38A"/><circle cx="216" cy="420" r="1.2" fill="#16A38A"/><circle cx="252" cy="420" r="1.2" fill="#16A38A"/><circle cx="288" cy="420" r="1.2" fill="#16A38A"/><circle cx="324" cy="420" r="1.2" fill="#16A38A"/>
+        </g>
+
+        <!-- ── Spine Anatomy (left panel) ── -->
+        <g id="spineGroup" opacity="0.9">
+          <text x="22" y="68" font-size="7.5" fill="#0F6E63" font-family="system-ui,sans-serif" font-weight="700" letter-spacing="1" opacity="0.6">SPINE</text>
+          <!-- spinal cord line -->
+          <line x1="46" y1="75" x2="46" y2="290" stroke="#16A38A" stroke-width="2.5" stroke-linecap="round" opacity="0.25"/>
+          <!-- vertebrae -->
+          <rect class="vertebra" x="32" y="78" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.18"/>
+          <rect class="vertebra" x="32" y="100" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.22"/>
+          <rect class="vertebra" x="32" y="122" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.27"/>
+          <rect class="vertebra" x="32" y="144" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.32"/>
+          <rect class="vertebra" x="32" y="166" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.36"/>
+          <rect class="vertebra" x="32" y="188" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.4"/>
+          <rect class="vertebra" x="32" y="210" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.44"/>
+          <rect class="vertebra" x="32" y="232" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.38"/>
+          <rect class="vertebra" x="32" y="254" width="28" height="16" rx="5" fill="#0F6E63" opacity="0.28"/>
+          <!-- nerve roots -->
+          <line x1="32" y1="86" x2="18" y2="82" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <line x1="32" y1="108" x2="18" y2="104" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <line x1="32" y1="130" x2="18" y2="126" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <line x1="32" y1="152" x2="18" y2="148" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <line x1="32" y1="174" x2="18" y2="170" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <line x1="32" y1="196" x2="18" y2="192" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <line x1="32" y1="218" x2="18" y2="214" stroke="#16A38A" stroke-width="1.2" opacity="0.3"/>
+          <!-- Highlighted active vertebra (healed!) -->
+          <rect id="healedVert" x="30" y="142" width="32" height="20" rx="6" fill="none" stroke="#16A38A" stroke-width="1.5" opacity="0"/>
+        </g>
+
+        <!-- ── Knee Joint (right panel) ── -->
+        <g id="kneeGroup">
+          <text x="290" y="68" font-size="7.5" fill="#0F6E63" font-family="system-ui,sans-serif" font-weight="700" letter-spacing="1" opacity="0.6">JOINT</text>
+          <!-- Femur bone -->
+          <rect x="306" y="75" width="18" height="75" rx="9" fill="#0F6E63" opacity="0.18"/>
+          <!-- Tibia bone -->
+          <rect x="306" y="192" width="18" height="75" rx="9" fill="#0F6E63" opacity="0.18"/>
+          <!-- Knee cap -->
+          <ellipse cx="315" cy="178" rx="15" ry="15" fill="none" stroke="#0F6E63" stroke-width="2.5" opacity="0.28"/>
+          <ellipse cx="315" cy="178" rx="8" ry="8" fill="#0F6E63" opacity="0.18"/>
+          <!-- Cartilage -->
+          <path d="M301 170 Q315 180 329 170" stroke="#16A38A" stroke-width="2" fill="none" opacity="0.4"/>
+          <path d="M301 185 Q315 175 329 185" stroke="#16A38A" stroke-width="2" fill="none" opacity="0.4"/>
+          <!-- Ligaments -->
+          <line x1="308" y1="150" x2="322" y2="195" stroke="#0F6E63" stroke-width="1.5" opacity="0.2" stroke-dasharray="3 2"/>
+          <line x1="322" y1="150" x2="308" y2="195" stroke="#0F6E63" stroke-width="1.5" opacity="0.2" stroke-dasharray="3 2"/>
+          <!-- Healing glow ring -->
+          <circle id="kneeGlow" cx="315" cy="178" r="22" fill="none" stroke="#16A38A" stroke-width="2"/>
+        </g>
+
+        <!-- ── Doctor Body / White Coat ── -->
+        <!-- Coat base -->
+        <path d="M118 370 Q108 310 115 270 L180 255 L245 270 Q252 310 242 370 Z" fill="white" opacity="0.95"/>
+        <!-- Coat shading -->
+        <path d="M118 370 Q108 310 115 270 L140 265 L138 370Z" fill="#f0f0f0" opacity="0.6"/>
+        <path d="M242 370 Q252 310 245 270 L220 265 L222 370Z" fill="#f0f0f0" opacity="0.6"/>
+        <!-- Lapels -->
+        <path d="M180 255 L158 278 L155 370" stroke="#ddd" stroke-width="1.5" fill="none"/>
+        <path d="M180 255 L202 278 L205 370" stroke="#ddd" stroke-width="1.5" fill="none"/>
+        <!-- Coat collar -->
+        <path d="M155 262 Q180 248 205 262" stroke="#ccc" stroke-width="2" fill="none"/>
+        <!-- Breast pocket -->
+        <rect x="205" y="292" width="24" height="28" rx="5" fill="none" stroke="#ddd" stroke-width="1.5"/>
+        <!-- Pens in pocket -->
+        <line x1="211" y1="292" x2="211" y2="284" stroke="#0F6E63" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="211" cy="283" r="1.5" fill="#16A38A"/>
+        <line x1="218" y1="292" x2="218" y2="282" stroke="#16A38A" stroke-width="2" stroke-linecap="round"/>
+        <!-- Stethoscope -->
+        <path d="M155 272 Q142 315 150 335 Q158 352 170 352 Q182 352 190 335 Q198 315 185 272"
+              stroke="#0A3D37" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <circle cx="170" cy="354" r="9" fill="#0A3D37"/>
+        <circle cx="170" cy="354" r="5" fill="#16A38A"/>
+        <circle cx="170" cy="354" r="2" fill="#fff" opacity="0.6"/>
+        <!-- Stethoscope earpieces -->
+        <line x1="155" y1="272" x2="148" y2="262" stroke="#0A3D37" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="185" y1="272" x2="192" y2="262" stroke="#0A3D37" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="148" cy="260" r="4" fill="#0A3D37"/>
+        <circle cx="192" cy="260" r="4" fill="#0A3D37"/>
+
+        <!-- Healing hands -->
+        <!-- Left hand (open palm, glowing) -->
+        <g id="leftHandGroup">
+          <ellipse cx="108" cy="330" rx="18" ry="12" fill="#E8D5C4" opacity="0.8" transform="rotate(-20 108 330)"/>
+          <!-- Fingers -->
+          <path d="M96 322 Q92 308 98 316" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M103 318 Q100 303 106 313" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M111 316 Q110 300 115 311" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M119 318 Q120 303 124 314" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <!-- Healing glow rings -->
+          <circle id="handGlowL" cx="108" cy="322" r="20" fill="none" stroke="#16A38A" stroke-width="1.5"/>
+          <circle id="handGlowL2" cx="108" cy="322" r="30" fill="none" stroke="#16A38A" stroke-width="1" opacity="0.5"/>
+        </g>
+        <!-- Right hand -->
+        <g id="rightHandGroup">
+          <ellipse cx="252" cy="330" rx="18" ry="12" fill="#E8D5C4" opacity="0.8" transform="rotate(20 252 330)"/>
+          <path d="M264 322 Q268 308 262 316" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M257 318 Q260 303 254 313" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M249 316 Q250 300 245 311" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M241 318 Q240 303 236 314" stroke="#c4a882" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle id="handGlowR" cx="252" cy="322" r="20" fill="none" stroke="#16A38A" stroke-width="1.5"/>
+          <circle id="handGlowR2" cx="252" cy="322" r="30" fill="none" stroke="#16A38A" stroke-width="1" opacity="0.5"/>
+        </g>
+
+        <!-- Neck -->
+        <rect x="165" y="210" width="30" height="30" rx="13" fill="#c8a882" opacity="0.9"/>
+
+        <!-- ── Head ── -->
+        <circle id="drHead" cx="180" cy="175" r="68" fill="url(#headGrad)"/>
+        <!-- Hair / scarf (hijab-style, respectful) -->
+        <ellipse cx="180" cy="118" rx="50" ry="25" fill="#0A3D37" opacity="0.75"/>
+        <ellipse cx="124" cy="162" rx="14" ry="26" fill="#0A3D37" opacity="0.6"/>
+        <ellipse cx="236" cy="162" rx="14" ry="26" fill="#0A3D37" opacity="0.6"/>
+        <path d="M115 160 Q118 215 150 228 Q165 234 180 234 Q195 234 210 228 Q242 215 245 160"
+              fill="#0A3D37" opacity="0.28"/>
+
+        <!-- ── Left Eye ── -->
+        <g id="eyeGroupLeft">
+          <ellipse cx="157" cy="166" rx="14" ry="15" fill="white"/>
+          <circle id="pupilLeft" cx="157" cy="166" r="8" fill="#0A3D37"/>
+          <circle id="pupilLeftIris" cx="157" cy="166" r="4" fill="#1a4a44"/>
+          <circle id="glintLeft" cx="160" cy="163" r="2.8" fill="white"/>
+          <circle cx="155" cy="168" r="1" fill="white" opacity="0.4"/>
+          <rect id="blinkLeft" x="143" y="151" width="28" height="0" fill="url(#headGrad)" rx="5"/>
+          <!-- Eyelash / brow -->
+          <path d="M144 152 Q157 147 170 152" stroke="#0A3D37" stroke-width="2.5" fill="none" opacity="0.6"/>
+        </g>
+
+        <!-- ── Right Eye ── -->
+        <g id="eyeGroupRight">
+          <ellipse cx="203" cy="166" rx="14" ry="15" fill="white"/>
+          <circle id="pupilRight" cx="203" cy="166" r="8" fill="#0A3D37"/>
+          <circle id="pupilRightIris" cx="203" cy="166" r="4" fill="#1a4a44"/>
+          <circle id="glintRight" cx="206" cy="163" r="2.8" fill="white"/>
+          <circle cx="201" cy="168" r="1" fill="white" opacity="0.4"/>
+          <rect id="blinkRight" x="189" y="151" width="28" height="0" fill="url(#headGrad)" rx="5"/>
+          <path d="M190 152 Q203 147 216 152" stroke="#0A3D37" stroke-width="2.5" fill="none" opacity="0.6"/>
+        </g>
+
+        <!-- Nose -->
+        <path d="M177 175 Q179 188 180 190 Q181 188 183 175" stroke="#fff" stroke-width="1.5" fill="none" opacity="0.35"/>
+
+        <!-- Smile -->
+        <path id="drSmile" d="M162 200c9 10 38 10 46 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+        <!-- Cheeks -->
+        <ellipse cx="135" cy="185" rx="12" ry="7" fill="#fff" opacity="0.1"/>
+        <ellipse cx="225" cy="185" rx="12" ry="7" fill="#fff" opacity="0.1"/>
+
+        <!-- ── Name Badge ── -->
+        <rect x="140" y="378" width="80" height="30" rx="10" fill="#0F6E63" opacity="0.12"/>
+        <text x="180" y="397" text-anchor="middle" font-size="8.5" fill="#0A3D37" font-family="system-ui,sans-serif" font-weight="700">Dr. Ayesha Zia</text>
+        <text x="180" y="407" text-anchor="middle" font-size="7" fill="#16A38A" font-family="system-ui,sans-serif">DPT · Physiotherapist</text>
+
+        <!-- ── ECG / Heartbeat line at bottom ── -->
+        <g clip-path="url(#cardClip)">
+          <path id="ecgPath"
+            d="M10 435 L55 435 L70 413 L82 457 L97 393 L112 457 L127 413 L142 435 L350 435"
+            stroke="#16A38A" stroke-width="2.5" fill="none"
+            stroke-linecap="round" stroke-linejoin="round"
+            stroke-dasharray="520" stroke-dashoffset="520"/>
+        </g>
+
+        <!-- ── Floating healing particles ── -->
+        <circle id="fp1" cx="90" cy="300" r="3" fill="#16A38A" opacity="0"/>
+        <circle id="fp2" cx="80" cy="270" r="2" fill="#16A38A" opacity="0"/>
+        <circle id="fp3" cx="275" cy="295" r="3" fill="#16A38A" opacity="0"/>
+        <circle id="fp4" cx="285" cy="265" r="2" fill="#16A38A" opacity="0"/>
+        <circle id="fp5" cx="100" cy="240" r="1.5" fill="#16A38A" opacity="0"/>
+        <circle id="fp6" cx="265" cy="240" r="1.5" fill="#16A38A" opacity="0"/>
+      </svg>
+
+      <!-- Floating mini info cards on avatar -->
+      <div class="avatar-chip chip-tl">
+        <span class="chip-icon">🦴</span>
+        <div><b>Spine</b><small>Rehab</small></div>
+      </div>
+      <div class="avatar-chip chip-br">
+        <span class="chip-icon">🫀</span>
+        <div><b>Cardiac</b><small>Recovery</small></div>
+      </div>
+
+      <div class="about-badge">
+        <b class="counter" data-target="9">0</b>
+        <span data-i18n="about.badge">years treating<br>pain &amp; recovery</span>
+      </div>
+    </div>
+    <div class="reveal-r">
+      <span class="kicker" data-i18n="about.kicker">About Dr. Ayesha Zia</span>
+      <h2 data-i18n="about.title">A clinician who treats the person, not just the diagnosis.</h2>
+      <p style="margin-top:16px; font-size:16px;" data-i18n="about.body">Dr. Ayesha Zia is a physiotherapist and certified hijama practitioner based in Rawalpindi, serving patients across Rawalpindi and Islamabad. She combines evidence-based physiotherapy, cardiac rehabilitation and traditional cupping therapy into treatment plans built around each patient's daily life — at Prime Care clinic or in the comfort of their own home.</p>
+      <div class="cred-list">
+        <div class="cred-item" data-n="1">
+          <h4 data-i18n="about.c1t">Doctor of Physical Therapy (DPT)</h4>
+          <p data-i18n="about.c1d">Placeholder — replace with her university &amp; graduation year.</p>
+        </div>
+        <div class="cred-item" data-n="2">
+          <h4 data-i18n="about.c2t">Certified Hijama (Cupping) Practitioner</h4>
+          <p data-i18n="about.c2d">Placeholder — replace with certifying body &amp; year.</p>
+        </div>
+        <div class="cred-item" data-n="3">
+          <h4 data-i18n="about.c3t">Cardiac Rehabilitation Training</h4>
+          <p data-i18n="about.c3d">Placeholder — replace with training institute.</p>
+        </div>
+        <div class="cred-item" data-n="4">
+          <h4 data-i18n="about.c4t">9+ years in clinical practice</h4>
+          <p data-i18n="about.c4d">Placeholder — replace with real years / prior workplaces.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="services.kicker">What we treat</span>
+      <h2 data-i18n="services.title">Three disciplines, one recovery plan</h2>
+      <p style="margin:0 auto" data-i18n="services.sub">Physiotherapy, hijama and cardiac rehab — chosen and combined based on your condition, not a fixed package.</p>
+    </div>
+
+    <!-- Physiotherapy -->
+    <div class="service-panel">
+      <div class="service-visual reveal-l">
+        <div class="tilt-card sv-physio" data-tilt>
+          <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><path d="M50 20a8 8 0 100-16 8 8 0 000 16z" fill="#fff" stroke="none"/><path d="M50 30v25l-18 30M50 55l18 30M32 45l-14 8M68 45l14 8" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+      <div class="service-copy reveal-r">
+        <h3 data-i18n="s1.title">Physiotherapy</h3>
+        <p class="desc" data-i18n="s1.desc">Manual therapy and guided exercise for back pain, joint pain, sports injuries and post-surgery recovery — with a plan you can follow at home between sessions.</p>
+        <ul class="service-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f1">Back, neck &amp; joint pain relief</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f2">Post-surgery &amp; post-injury rehab</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f3">Sports injury recovery</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s1.f4">Personalised home exercise plan</span></li>
+        </ul>
+        <div class="price-tag"><span class="from" data-i18n="s1.from">Starting from</span><span class="amt">PKR 2,500</span></div>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="s1.cta">Book Physiotherapy</a>
+      </div>
+    </div>
+
+    <!-- Hijama -->
+    <div class="service-panel">
+      <div class="service-visual reveal-r">
+        <div class="tilt-card sv-hijama" data-tilt>
+          <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><path d="M30 45h40l-4 30a6 6 0 01-6 5H40a6 6 0 01-6-5l-4-30z"/><path d="M30 45c0-11 9-20 20-20s20 9 20 20"/><path d="M50 25v-8"/></svg>
+        </div>
+      </div>
+      <div class="service-copy reveal-l">
+        <h3 data-i18n="s2.title">Hijama (Cupping Therapy)</h3>
+        <p class="desc" data-i18n="s2.desc">Traditional wet and dry cupping performed with sterile, single-use equipment — used for circulation, detox and chronic pain relief, following Sunnah practice.</p>
+        <ul class="service-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f1">Wet &amp; dry cupping</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f2">Sterile, single-use cups &amp; needles</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f3">Chronic pain &amp; migraine relief</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s2.f4">Female practitioner, private setting</span></li>
+        </ul>
+        <div class="price-tag"><span class="from" data-i18n="s2.from">Starting from</span><span class="amt">PKR 3,000</span></div>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="s2.cta">Book Hijama</a>
+      </div>
+    </div>
+
+    <!-- Cardio -->
+    <div class="service-panel">
+      <div class="service-visual reveal-l">
+        <div class="tilt-card sv-cardio" data-tilt>
+          <svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="4"><path d="M15 55h15l8-20 12 35 10-25 6 10h19" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="service-copy reveal-r">
+        <h3 data-i18n="s3.title">Cardiac Rehab &amp; Cardio Physiotherapy</h3>
+        <p class="desc" data-i18n="s3.desc">Structured, monitored exercise and breathing therapy for patients recovering from a cardiac event or living with reduced stamina — paced to what your heart is ready for.</p>
+        <ul class="service-feats">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f1">Post-cardiac event recovery</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f2">Breathing &amp; graded exercise therapy</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f3">Stamina &amp; mobility rebuilding</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="s3.f4">Monthly progress review</span></li>
+        </ul>
+        <div class="price-tag"><span class="from" data-i18n="s3.from">Starting from</span><span class="amt">PKR 8,000<span style="font-size:13px;color:var(--ink-soft)">/mo</span></span></div>
+        <a href="#contact" class="btn btn-primary btn-sm" data-i18n="s3.cta">Book Cardiac Rehab</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="process.kicker">How it works</span>
+      <h2 data-i18n="process.title">From first message to full recovery</h2>
+      <p style="margin:0 auto" data-i18n="process.sub">The same clear path whether you visit the clinic or Dr. Ayesha visits you at home.</p>
+    </div>
+    <div class="process-track">
+      <div class="process-line"><div class="process-line-fill" id="processFill"></div></div>
+      <div class="process-steps stagger" id="processSteps">
+        <div class="p-step" style="--i:0"><div class="num">1</div><h4 data-i18n="p1.t">Book</h4><p data-i18n="p1.d">WhatsApp, call or the form below.</p></div>
+        <div class="p-step" style="--i:1"><div class="num">2</div><h4 data-i18n="p2.t">Assess</h4><p data-i18n="p2.d">History, pain points &amp; goals reviewed.</p></div>
+        <div class="p-step" style="--i:2"><div class="num">3</div><h4 data-i18n="p3.t">Plan</h4><p data-i18n="p3.d">A treatment plan built for your case.</p></div>
+        <div class="p-step" style="--i:3"><div class="num">4</div><h4 data-i18n="p4.t">Treat</h4><p data-i18n="p4.d">Sessions at clinic or your home.</p></div>
+        <div class="p-step" style="--i:4"><div class="num">5</div><h4 data-i18n="p5.t">Review</h4><p data-i18n="p5.d">Progress checked &amp; plan adjusted.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="pricing.kicker">Packages</span>
+      <h2 data-i18n="pricing.title">Simple pricing, starting points</h2>
+      <p style="margin:0 auto" data-i18n="pricing.sub">Exact cost depends on condition &amp; location. These are starting-from ranges — confirmed after assessment.</p>
+    </div>
+    <div class="price-grid reveal stagger">
+      <div class="price-card" style="--i:0">
+        <h3 data-i18n="pc1.t">Physiotherapy Session</h3>
+        <div class="p-from" data-i18n="pc1.from">Starting from</div>
+        <div class="p-amt">PKR 2,500</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc1.l1">60-minute session</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc1.l2">Clinic or home visit</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc1.l3">Home exercise plan included</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-sm" style="width:100%" data-i18n="pc.cta">Book This</a>
+      </div>
+      <div class="price-card feat" style="--i:1">
+        <span class="tag" data-i18n="pc2.tag">Most booked</span>
+        <h3 data-i18n="pc2.t">Hijama Session</h3>
+        <div class="p-from" data-i18n="pc2.from">Starting from</div>
+        <div class="p-amt">PKR 3,000</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc2.l1">Wet or dry cupping</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc2.l2">Sterile single-use tools</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc2.l3">Aftercare guidance</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-sm" style="width:100%" data-i18n="pc.cta">Book This</a>
+      </div>
+      <div class="price-card" style="--i:2">
+        <h3 data-i18n="pc3.t">Cardiac Rehab Program</h3>
+        <div class="p-from" data-i18n="pc3.from">Starting from</div>
+        <div class="p-amt">PKR 8,000<span style="font-size:14px;color:var(--ink-soft)">/mo</span></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc3.l1">Weekly monitored sessions</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc3.l2">Breathing &amp; stamina plan</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pc3.l3">Monthly progress report</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost btn-sm" style="width:100%" data-i18n="pc.cta">Book This</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:26px; font-size:13px;" data-i18n="pricing.note">Prices shown are placeholders — update with Prime Care's confirmed rates.</p>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="test.kicker">Patients</span>
+      <h2 data-i18n="test.title">What patients say after treatment</h2>
+    </div>
+  </div>
+  <div class="marquee" id="marqueeTrack"></div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="faq.kicker">Good to know</span>
+      <h2 data-i18n="faq.title">Frequently asked questions</h2>
+    </div>
+    <div class="faq-list reveal" id="faqList">
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq1.q">Do you visit patients at home?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq1.a">Yes — Dr. Ayesha offers both clinic visits at Prime Care and home visits across Rawalpindi and Islamabad.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq2.q">Is hijama (cupping) safe?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq2.a">Yes, when performed by a trained practitioner with sterile, single-use equipment — exactly how every hijama session at Prime Care is done.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq3.q">How long does a session take?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq3.a">Most physiotherapy and hijama sessions run 45–60 minutes; cardiac rehab sessions are scheduled weekly and reviewed monthly.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq4.q">Which areas do you cover?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq4.a">Rawalpindi and Islamabad, including home visits — message us your area to confirm availability.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span data-i18n="faq5.q">What should I bring to the first visit?</span><span class="plus"></span></div>
+        <div class="faq-a"><p data-i18n="faq5.a">Any previous reports, scans or prescriptions related to your condition, and comfortable clothing you can move in.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG / HEALTH TIPS ============ -->
+<section class="blog" id="blog">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="kicker" data-i18n="blog.kicker">Health tips</span>
+      <h2 data-i18n="blog.title">From Dr. Ayesha's notes</h2>
+    </div>
+    <div class="blog-grid reveal stagger">
+
+      <!-- Card 1: Physiotherapy -->
+      <div class="blog-card" style="--i:0" data-article="physio" role="button" tabindex="0" aria-label="Read physiotherapy article">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,var(--teal-600),var(--teal-900))">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48"><path d="M12 2a4 4 0 0 1 4 4v6a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/><path d="M8 22v-4a4 4 0 0 1 8 0v4"/><path d="M2 12h4m12 0h4"/></svg>
+          <span class="blog-read-time">5 min read</span>
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">Physiotherapy</span>
+          <h4>Five stretches for desk-job back pain</h4>
+          <p>Simple movements you can do at your desk to ease lower-back tension.</p>
+          <span class="blog-cta">Read article <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+
+      <!-- Card 2: Hijama -->
+      <div class="blog-card" style="--i:1" data-article="hijama" role="button" tabindex="0" aria-label="Read hijama article">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#0C8E70,#074d3e)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48"><path d="M12 2c-4 4-6 7-6 10a6 6 0 0 0 12 0c0-3-2-6-6-10z"/><path d="M12 12v4"/><circle cx="12" cy="18" r="1" fill="#fff"/></svg>
+          <span class="blog-read-time">7 min read</span>
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">Hijama</span>
+          <h4>What to expect at your first hijama session</h4>
+          <p>A walkthrough of the process, aftercare and how soon results are felt.</p>
+          <span class="blog-cta">Read article <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+
+      <!-- Card 3: Cardiac Rehab -->
+      <div class="blog-card" style="--i:2" data-article="cardiac" role="button" tabindex="0" aria-label="Read cardiac rehab article">
+        <div class="blog-thumb" style="background:linear-gradient(135deg,#0d7a6a,#0A3D37)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>
+          <span class="blog-read-time">6 min read</span>
+        </div>
+        <div class="blog-body">
+          <span class="blog-cat">Cardiac Rehab</span>
+          <h4>Walking after a cardiac event — how much is safe?</h4>
+          <p>General pacing guidance for early recovery weeks.</p>
+          <span class="blog-cta">Read article <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE OVERLAYS ============ -->
+
+<!-- Overlay: Physiotherapy -->
+<div class="article-overlay" id="overlay-physio" role="dialog" aria-modal="true" aria-label="Physiotherapy article">
+  <div class="overlay-inner">
+    <header class="overlay-header">
+      <a href="#" class="brand-logo" aria-label="Back to Prime Care">
+        <svg class="logo-mark" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="url(#lg1)" stroke-width="2"/><rect x="19.5" y="12" width="5" height="20" rx="2.5" fill="url(#lg1)"/><rect x="12" y="19.5" width="20" height="5" rx="2.5" fill="url(#lg1)"/><circle cx="22" cy="22" r="4" fill="#16A38A"/><defs><linearGradient id="lg1" x1="4" y1="4" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#16A38A"/><stop offset="100%" stop-color="#0A3D37"/></linearGradient></defs></svg>
+        <span class="brand-name">Prime<span class="brand-accent">Care</span></span>
+      </a>
+      <button class="overlay-close" onclick="closeArticle('physio')" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        Close
+      </button>
+    </header>
+    <div class="overlay-scroll">
+      <div class="art-hero" style="background:linear-gradient(135deg,var(--teal-700),var(--teal-900))">
+        <div class="art-hero-inner">
+          <span class="art-kicker">Physiotherapy</span>
+          <h1>Five Stretches for Desk‑Job Back Pain</h1>
+          <p class="art-lead">Simple, evidence-based movements you can do at your workstation to ease lumbar tension — no equipment needed.</p>
+          <div class="art-meta"><span>🕐 5 min read</span><span>By Dr. Ayesha Zia, DPT</span></div>
+        </div>
+        <div class="art-hero-svg">
+          <svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="90" fill="white" opacity="0.05"/><circle cx="100" cy="100" r="60" fill="white" opacity="0.06"/><path d="M100 40a8 8 0 100-16 8 8 0 000 16z" fill="#fff" opacity="0.8"/><path d="M100 50v35l-18 40M100 85l18 40M72 70l-20 10M128 70l20 10" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity="0.7"/></svg>
+        </div>
+      </div>
+      <div class="art-body">
+        <div class="art-intro-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal-500)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <p>These stretches are general wellness guidance. If you have an existing injury or chronic pain, always consult Dr. Ayesha before starting any exercise routine.</p>
+        </div>
+
+        <h2>Why Does Your Back Hurt at a Desk?</h2>
+        <p>Prolonged sitting compresses spinal discs, tightens hip flexors, and weakens core muscles — a triple threat that leads to the familiar dull ache in the lower back. The good news: targeted micro-movements throughout the day can dramatically reduce pain intensity and prevent long-term damage.</p>
+
+        <div class="stretch-grid">
+          <div class="stretch-card">
+            <div class="stretch-num">01</div>
+            <div class="stretch-svg">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="15" r="8" fill="var(--teal-100)" stroke="var(--teal-600)" stroke-width="2"/><path d="M40 23v20M28 35 Q20 50 24 65M52 35 Q60 50 56 65" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M32 55 Q40 70 48 55" stroke="var(--teal-500)" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Cat-Cow Stretch</h3>
+              <p>Sit at the edge of your chair, hands on knees. Inhale and arch your lower back (cow). Exhale and round it toward the chair back (cat). Hold 3 seconds each.</p>
+              <div class="stretch-tag">3 × 10 reps · Every 2 hours</div>
+            </div>
+          </div>
+          <div class="stretch-card">
+            <div class="stretch-num">02</div>
+            <div class="stretch-svg">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="15" r="8" fill="var(--teal-100)" stroke="var(--teal-600)" stroke-width="2"/><path d="M40 23v18" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M20 41 L60 41" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M30 65v-10" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M50 65v-10" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Seated Spinal Twist</h3>
+              <p>Sit tall, cross your right leg over left. Twist to the right, placing your left hand on your outer right knee. Hold 20 seconds each side.</p>
+              <div class="stretch-tag">2 × 20 sec · Each side</div>
+            </div>
+          </div>
+          <div class="stretch-card">
+            <div class="stretch-num">03</div>
+            <div class="stretch-svg">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="15" r="8" fill="var(--teal-100)" stroke="var(--teal-600)" stroke-width="2"/><path d="M40 23v20M20 43 Q40 30 60 43" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M30 43v22M50 43v22" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Hip Flexor Stretch</h3>
+              <p>Sit on the chair edge, slide your right leg back until you feel a pull in your front hip. Keep your torso upright. Switch legs after 30 seconds.</p>
+              <div class="stretch-tag">30 sec each side · 3×/day</div>
+            </div>
+          </div>
+          <div class="stretch-card">
+            <div class="stretch-num">04</div>
+            <div class="stretch-svg">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="15" r="8" fill="var(--teal-100)" stroke="var(--teal-600)" stroke-width="2"/><path d="M40 23v20M20 55 Q40 40 60 55" stroke="var(--teal-600)" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Chest Opener</h3>
+              <p>Clasp hands behind your back. Straighten arms, lift chest and draw shoulder blades together. Counteracts the forward slump position of typing.</p>
+              <div class="stretch-tag">Hold 15 sec · Every hour</div>
+            </div>
+          </div>
+          <div class="stretch-card">
+            <div class="stretch-num">05</div>
+            <div class="stretch-svg">
+              <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="15" r="8" fill="var(--teal-100)" stroke="var(--teal-600)" stroke-width="2"/><path d="M40 23v18" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M25 41 L55 41" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/><path d="M40 41v25" stroke="var(--teal-700)" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <h3>Neck Lateral Stretch</h3>
+              <p>Drop your right ear toward your right shoulder. Use your right hand to gently add a small amount of pressure. Relax your left shoulder down.</p>
+              <div class="stretch-tag">Hold 20 sec · Each side</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-cta-box">
+          <h3>Pain persisting after 2 weeks of stretching?</h3>
+          <p>Stretching helps mild tension, but structural back pain, disc issues or nerve pain need professional assessment. Dr. Ayesha offers a personalised physiotherapy plan built specifically for your posture and daily lifestyle.</p>
+          <a href="#contact" class="btn btn-primary" onclick="closeArticle('physio')">Book a Physiotherapy Session</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Overlay: Hijama -->
+<div class="article-overlay" id="overlay-hijama" role="dialog" aria-modal="true" aria-label="Hijama article">
+  <div class="overlay-inner">
+    <header class="overlay-header">
+      <a href="#" class="brand-logo">
+        <svg class="logo-mark" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="url(#lg2)" stroke-width="2"/><rect x="19.5" y="12" width="5" height="20" rx="2.5" fill="url(#lg2)"/><rect x="12" y="19.5" width="20" height="5" rx="2.5" fill="url(#lg2)"/><circle cx="22" cy="22" r="4" fill="#16A38A"/><defs><linearGradient id="lg2" x1="4" y1="4" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#16A38A"/><stop offset="100%" stop-color="#0A3D37"/></linearGradient></defs></svg>
+        <span class="brand-name">Prime<span class="brand-accent">Care</span></span>
+      </a>
+      <button class="overlay-close" onclick="closeArticle('hijama')" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        Close
+      </button>
+    </header>
+    <div class="overlay-scroll">
+      <div class="art-hero" style="background:linear-gradient(135deg,#0C8E70,#074d3e)">
+        <div class="art-hero-inner">
+          <span class="art-kicker">Hijama · Cupping Therapy</span>
+          <h1>What to Expect at Your First Hijama Session</h1>
+          <p class="art-lead">A complete walkthrough of the process, what you'll feel, and how to care for yourself afterwards — so you arrive prepared and confident.</p>
+          <div class="art-meta"><span>🕐 7 min read</span><span>By Dr. Ayesha Zia, DPT</span></div>
+        </div>
+        <div class="art-hero-svg">
+          <svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="90" fill="white" opacity="0.05"/><path d="M100 30c-30 30-45 55-45 75a45 45 0 0090 0c0-20-15-45-45-75z" fill="#fff" opacity="0.12"/><circle cx="100" cy="140" r="12" fill="#fff" opacity="0.25"/><path d="M100 128v-20" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity="0.6"/></svg>
+        </div>
+      </div>
+      <div class="art-body">
+        <div class="art-intro-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal-500)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p>All hijama at Prime Care is performed using <strong>sterile, single-use</strong> cups and lancets in a private setting. Every session follows Islamic hygienic standards and clinical protocols.</p>
+        </div>
+
+        <h2>What Is Hijama?</h2>
+        <p>Hijama (حجامہ) is the Islamic practice of wet cupping — an ancient form of medicine endorsed by the Prophet ﷺ and backed by a growing body of modern research for pain relief, blood circulation, and detoxification. Dr. Ayesha combines the Sunnah method with clinical physiotherapy knowledge to deliver safe, effective sessions.</p>
+
+        <h2>The Session — Step by Step</h2>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot">1</div>
+            <div><h3>Consultation (10–15 min)</h3><p>Dr. Ayesha reviews your health history, discusses your goals and identifies the correct cupping points for your condition. Wet or dry cupping is decided at this stage.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">2</div>
+            <div><h3>Dry Cupping (5–10 min)</h3><p>Sterile cups are placed on the skin and gentle suction is created. This draws blood to the surface and warms the tissue. You'll feel a pulling sensation — not painful.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">3</div>
+            <div><h3>Incisions (1–2 min)</h3><p>For wet cupping, tiny superficial scratches are made with a sterile lancet. This is the part most people are anxious about — in reality it feels like a mild scratch and is over in seconds.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">4</div>
+            <div><h3>Wet Cupping (5–10 min)</h3><p>Cups are reapplied. A small amount of blood is drawn out — this is believed to remove stagnant blood and metabolic waste from the tissues.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot">5</div>
+            <div><h3>Aftercare Application</h3><p>The area is cleaned with antiseptic. Black seed oil (kalonji) is often applied — a Sunnah aftercare practice with antimicrobial properties.</p></div>
+          </div>
+        </div>
+
+        <h2>Aftercare — What To Do</h2>
+        <div class="aftercare-grid">
+          <div class="ac-card do">
+            <h3>✓ Do</h3>
+            <ul><li>Rest for the remainder of the day</li><li>Keep the cupping sites dry for 24 hours</li><li>Drink plenty of warm water</li><li>Eat light, wholesome food</li><li>Apply black seed oil as instructed</li></ul>
+          </div>
+          <div class="ac-card dont">
+            <h3>✗ Avoid</h3>
+            <ul><li>Cold showers or swimming for 24h</li><li>Heavy exercise on the day of cupping</li><li>Tight clothing over cupping sites</li><li>Seafood on the day (traditional precaution)</li></ul>
+          </div>
+        </div>
+
+        <div class="art-cta-box">
+          <h3>Ready to try hijama?</h3>
+          <p>Book your consultation with Dr. Ayesha. She will answer any remaining questions before the session and customise the cupping points to your specific health concern.</p>
+          <a href="#contact" class="btn btn-primary" onclick="closeArticle('hijama')">Book a Hijama Session</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Overlay: Cardiac Rehab -->
+<div class="article-overlay" id="overlay-cardiac" role="dialog" aria-modal="true" aria-label="Cardiac rehab article">
+  <div class="overlay-inner">
+    <header class="overlay-header">
+      <a href="#" class="brand-logo">
+        <svg class="logo-mark" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="20" stroke="url(#lg3)" stroke-width="2"/><rect x="19.5" y="12" width="5" height="20" rx="2.5" fill="url(#lg3)"/><rect x="12" y="19.5" width="20" height="5" rx="2.5" fill="url(#lg3)"/><circle cx="22" cy="22" r="4" fill="#16A38A"/><defs><linearGradient id="lg3" x1="4" y1="4" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#16A38A"/><stop offset="100%" stop-color="#0A3D37"/></linearGradient></defs></svg>
+        <span class="brand-name">Prime<span class="brand-accent">Care</span></span>
+      </a>
+      <button class="overlay-close" onclick="closeArticle('cardiac')" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        Close
+      </button>
+    </header>
+    <div class="overlay-scroll">
+      <div class="art-hero" style="background:linear-gradient(135deg,#0d7a6a,#0A3D37)">
+        <div class="art-hero-inner">
+          <span class="art-kicker">Cardiac Rehabilitation</span>
+          <h1>Walking After a Cardiac Event — How Much Is Safe?</h1>
+          <p class="art-lead">A practical, evidence-based guide to pacing your recovery walks in the weeks after a heart attack, bypass or angioplasty.</p>
+          <div class="art-meta"><span>🕐 6 min read</span><span>By Dr. Ayesha Zia, DPT</span></div>
+        </div>
+        <div class="art-hero-svg">
+          <svg viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="90" fill="white" opacity="0.05"/><path d="M30 110 L60 110 L72 88 L84 132 L96 72 L108 132 L120 88 L132 110 L170 110" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/></svg>
+        </div>
+      </div>
+      <div class="art-body">
+        <div class="art-intro-box" style="border-left-color: #e67e22;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e67e22" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <p><strong>Always follow your cardiologist's specific instructions first.</strong> This article provides general guidance. Dr. Ayesha will tailor your walking plan after a full cardiac assessment.</p>
+        </div>
+
+        <h2>Why Walking Is the Best First Exercise</h2>
+        <p>Walking is low-impact, adjustable, and directly trains the cardiovascular system without overloading it. Research from the European Society of Cardiology shows that structured walking within 2 weeks of a cardiac event significantly improves long-term outcomes, reduces re-hospitalisation risk, and improves mood — a crucial factor in recovery.</p>
+
+        <h2>The 6-Week Progressive Plan</h2>
+        <div class="week-plan">
+          <div class="week-row">
+            <div class="week-badge" style="background:var(--teal-100);color:var(--teal-800)">Week 1–2</div>
+            <div>
+              <h3>Gentle Mobilisation</h3>
+              <p>5–10 minute walks, flat terrain only, twice daily. Stop if you feel breathless, chest tightness, or your heart rate exceeds the limit set by your cardiologist.</p>
+              <div class="week-stats"><span>⏱ 5–10 min</span><span>🚶 Flat ground</span><span>📊 Very light effort</span></div>
+            </div>
+          </div>
+          <div class="week-row">
+            <div class="week-badge" style="background:#E6F4EF;color:var(--teal-800)">Week 3–4</div>
+            <div>
+              <h3>Building Endurance</h3>
+              <p>Extend walks to 15–20 minutes. You should be able to hold a conversation comfortably throughout. Gentle inclines only if Week 1–2 went well.</p>
+              <div class="week-stats"><span>⏱ 15–20 min</span><span>🚶 Light terrain</span><span>📊 Light effort</span></div>
+            </div>
+          </div>
+          <div class="week-row">
+            <div class="week-badge" style="background:#D4EEE8;color:var(--teal-800)">Week 5–6</div>
+            <div>
+              <h3>Moderate Activity</h3>
+              <p>Target 25–30 minutes, once or twice daily. You may introduce slightly brisker pacing if you've been symptom-free. Always warm up and cool down for 3 minutes.</p>
+              <div class="week-stats"><span>⏱ 25–30 min</span><span>🚶 Mixed terrain</span><span>📊 Moderate effort</span></div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Warning Signs — Stop Immediately If:</h2>
+        <div class="warning-list">
+          <div class="warn-item"><span class="warn-icon">⚠️</span><span>Chest pain, pressure or tightness</span></div>
+          <div class="warn-item"><span class="warn-icon">⚠️</span><span>Severe shortness of breath at rest pace</span></div>
+          <div class="warn-item"><span class="warn-icon">⚠️</span><span>Dizziness, lightheadedness or fainting</span></div>
+          <div class="warn-item"><span class="warn-icon">⚠️</span><span>Irregular or unusually rapid heartbeat</span></div>
+          <div class="warn-item"><span class="warn-icon">⚠️</span><span>Cold sweats or sudden nausea</span></div>
+        </div>
+
+        <div class="art-cta-box">
+          <h3>Need a personalised cardiac rehab plan?</h3>
+          <p>Dr. Ayesha builds individual cardiac rehabilitation programmes that factor in your specific event, current fitness, and daily life in Rawalpindi & Islamabad — at the clinic or at home.</p>
+          <a href="#contact" class="btn btn-primary" onclick="closeArticle('cardiac')">Book Cardiac Rehab</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="blob blob-1" style="background:linear-gradient(135deg,#fff,var(--teal-500) 140%);"></div>
+  <div class="container contact-grid">
+    <div class="reveal-l">
+      <span class="kicker" style="color:#8FE0CE" data-i18n="contact.kicker">Get in touch</span>
+      <h2 data-i18n="contact.title">Let's plan your recovery</h2>
+      <p class="lead" data-i18n="contact.lead">Message on WhatsApp, call directly, or fill the form and we'll confirm your slot the same day.</p>
+      <div class="contact-methods">
+        <a class="c-method" href="https://wa.me/923000000000" target="_blank" rel="noopener">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M20.5 3.5A11.8 11.8 0 0012 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.3-1.7a11.9 11.9 0 005.7 1.5h.1c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.1-3.5-8.4zM12 21.3h-.1a9.9 9.9 0 01-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4a9.9 9.9 0 01-1.5-5.3C2.1 6.5 6.5 2.1 12 2.1c2.6 0 5.1 1 7 2.9a9.8 9.8 0 012.9 7c0 5.5-4.5 9.9-9.9 9.9z"/></svg></div>
+          <div><b data-i18n="contact.wa">WhatsApp</b><span>+92 300 0000000</span></div>
+        </a>
+        <a class="c-method" href="tel:+923000000000">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 3a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.2-1.3a2 2 0 012.1-.5c1 .3 2 .5 3 .7a2 2 0 011.7 2z"/></svg></div>
+          <div><b data-i18n="contact.call">Call</b><span>+92 300 0000000</span></div>
+        </a>
+        <div class="c-method">
+          <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b data-i18n="contact.area">Service area</b><span data-i18n="contact.areaVal">Rawalpindi &amp; Islamabad</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="form-card reveal-r">
+      <h3 data-i18n="form.title">Request an appointment</h3>
+      <form id="bookingForm">
+        <div class="field"><label data-i18n="form.name">Full name</label><input type="text" id="f_name" required></div>
+        <div class="field"><label data-i18n="form.phone">Phone / WhatsApp number</label><input type="tel" id="f_phone" required></div>
+        <div class="field"><label data-i18n="form.service">Service needed</label>
+          <select id="f_service">
+            <option data-i18n="s1.title">Physiotherapy</option>
+            <option data-i18n="s2.title">Hijama (Cupping Therapy)</option>
+            <option data-i18n="s3.title">Cardiac Rehab &amp; Cardio Physiotherapy</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="form.mode">Preferred visit type</label>
+          <select id="f_mode">
+            <option data-i18n="form.modeClinic">Clinic visit</option>
+            <option data-i18n="form.modeHome">Home visit</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="form.msg">Anything we should know? (optional)</label><textarea id="f_msg"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%" data-i18n="form.submit">Send via WhatsApp</button>
+        <p class="form-note" data-i18n="form.note">This opens WhatsApp with your details pre-filled — nothing is sent until you press send there.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">Prime Care</div>
+        <p data-i18n="foot.about">Physiotherapy, hijama and cardiac rehab with Dr. Ayesha Zia — serving Rawalpindi &amp; Islamabad at the clinic or at home.</p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.linksT">Quick links</h5>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 data-i18n="foot.contactT">Contact</h5>
+        <ul>
+          <li>+92 300 0000000</li>
+          <li>primecare.physio@example.com</li>
+          <li data-i18n="contact.areaVal">Rawalpindi &amp; Islamabad</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.copy">© 2026 Prime Care — Dr. Ayesha Zia. All rights reserved.</span>
+      <span data-i18n="foot.placeholder">Contact details on this page are placeholders — update before publishing.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating Actions -->
+<div class="fab-container">
+  <button id="chatbotBtn" class="fab-btn chatbot-fab" aria-label="Open Chat">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+  </button>
+  <a class="fab-btn wa-fab" href="https://wa.me/923000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Chat Window UI -->
+<div id="chatWindow" class="chat-window hidden">
+  <div class="chat-header">
+    <div class="chat-title">
+      <div class="chat-avatar">A</div>
+      <div>
+        <b>Prime Care Assistant</b>
+        <span>Online</span>
+      </div>
+    </div>
+    <button id="closeChat" aria-label="Close Chat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+  </div>
+  <div id="chatMessages" class="chat-messages">
+    <div class="chat-msg ai-msg">
+      <div class="msg-content">Hello! I'm the Prime Care virtual assistant. How can I help you today?</div>
+    </div>
+  </div>
+  <form id="chatForm" class="chat-input-area">
+    <input type="text" id="chatInput" placeholder="Type your message..." autocomplete="off" required>
+    <button type="submit" class="send-btn" aria-label="Send">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
